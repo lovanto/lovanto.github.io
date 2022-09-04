@@ -1,0 +1,19 @@
+{
+  "name": "lovanto-portfolio",
+  "version": "1.0.0",
+  "description": "Just a portfolio website about Lovanto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lovanto/portfolio.git"
+  },
+  "author": "rifkylovanto@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lovanto/portfolio/issues"
+  },
+  "homepage": "https://github.com/lovanto/portfolio#readme"
+}
