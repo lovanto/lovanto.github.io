@@ -6,15 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Lovanto's Portfolio</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/homepage.css" />
     <link
       rel="stylesheet"
       href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar w/ text</a>
+  <body class="homepage">
+    <nav class="navbar navbar-dark navbar-expand-lg mt-5 mb-5">
+      <div class="container">
+        <a class="navbar-brand d-block text-bg-light rounded-3" href="#">L</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -29,22 +34,68 @@
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" aria-current="page" href="#"
+                >Overview</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#">Hobbies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Setup</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
             </li>
           </ul>
-          <span class="navbar-text"> Navbar text with an inline element </span>
         </div>
       </div>
     </nav>
 
-    <div class="container">
-      <img src="./assets/images/background.png" alt="Background" />
+    <div class="homepage-margin container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="homepage-header">Hi, I'm</div>
+          <div class="homepage-header inter-bold">Rifky Lovanto</div>
+          <div class="homepage-content mt-3">
+            I'm a 7th software engineering student at Telkom University. <br />
+            Mobile Programming Enthusiast and Back-End Developer Enthusiast.
+          </div>
+          <div class="mt-5">
+            <a class="homepage-link" href=""
+              ><span class="me-4">Go To Overview</span>
+              <i class="bi bi-arrow-right-circle-fill homepage-icons"></i
+            ></a>
+          </div>
+          <div class="mt-5 row homepage-footer">
+            <div class="col-lg-4 col-md-4 col-sm-4">PROJECTS</div>
+            <div class="col-lg-4 col-md-4 col-sm-4">DEGREE</div>
+            <div class="col-lg-4 col-md-4 col-sm-4">NATIONALITY</div>
+          </div>
+          <div class="mt-2 row homepage-footer-content">
+            <div class="col-lg-4 col-md-4 col-sm-4">12</div>
+            <div class="col-lg-4 col-md-4 col-sm-4">Bachelor</div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+              <img
+                class="rounded-circle"
+                src="./assets/images/id.png"
+                alt="flag"
+              />
+              <span class="position-absolute mt-1 ms-3">IDN</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <img
+            class="homepage-profile rounded-circle mx-auto d-block"
+            src="./assets/images/profile.jpg"
+            alt="profile"
+          />
+        </div>
     </div>
+	
   </body>
 </html>
