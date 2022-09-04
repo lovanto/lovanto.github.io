@@ -6,6 +6,10 @@ body {
 	font-size: 1vw !important;
 }
 
+pngrndiv {
+	display: none !important;
+}
+
 a {
 	text-decoration: none !important;
 }
