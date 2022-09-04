@@ -2,7 +2,7 @@
   "name": "lovanto-portfolio",
   "version": "1.0.0",
   "description": "Just a portfolio website about Lovanto",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/lovanto/portfolio#readme",
   "dependencies": {
-    "bootstrap": "^5.2.0"
+    "bootstrap": "^5.2.0",
+    "bootstrap-icons": "^1.9.1"
   }
 }
