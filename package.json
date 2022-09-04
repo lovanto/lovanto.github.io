@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/lovanto/portfolio/issues"
   },
-  "homepage": "https://github.com/lovanto/portfolio#readme"
+  "homepage": "https://github.com/lovanto/portfolio#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.0"
+  }
 }
