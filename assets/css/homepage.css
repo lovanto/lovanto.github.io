@@ -1,0 +1,32 @@
+.homepage {
+	color: white;
+	background-image: url('../images/background.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 90vh;
+}
+
+.homepage-header {
+	font-size: 3vw;
+}
+
+.homepage-content {
+	font-size: 1.1vw;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.homepage-link {
+	font-family: InterSemiBold;
+	font-size: 1vw;
+	color: white !important;
+}
+
+.homepage-icons {
+	position: absolute;
+	font-size: 1.5vw;
+	margin-top: -5px;
+}
+
+.homepage-margin {
+	margin-top: 12.5vh;
+}
