@@ -1,0 +1,44 @@
+.warmachine {
+	color: white;
+	background-image: url('../images/background.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 44vw;
+}
+
+.warmachine-header {
+	font-size: 3vw;
+}
+
+.warmachine-header-back {
+	font-size: 6vw;
+	margin-top: -3rem;
+	margin-left: -3rem;
+	color: rgba(255, 255, 255, 0.1);
+}
+
+.warmachine-subheader {
+	font-size: 1.5vw;
+	font-family: InterBold;
+}
+
+.warmachine-content {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.warmachine-profile {
+	margin-top: 1.5rem;
+	height: 43vh;
+}
+
+.warmachine-margin {
+	margin-top: 13vh;
+}
+
+.custom-ul {
+	list-style-image: url('../images/dot.png');
+}
+
+.custom-ul>li {
+	padding-top: 1.3rem;
+}
