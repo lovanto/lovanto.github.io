@@ -1,0 +1,48 @@
+.contact {
+	color: white;
+	background-image: url('../images/background-overview.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 44vw;
+}
+
+.contact-header {
+	font-size: 3vw;
+}
+
+.contact-header-back {
+	font-size: 6vw;
+	margin-top: -3rem;
+	margin-left: -3rem;
+	color: rgba(255, 255, 255, 0.1);
+}
+
+.contact-subheader {
+	font-size: 1.5vw;
+	font-family: InterBold;
+}
+
+.contact-content {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-profile {
+	margin-top: -7.5rem;
+	height: 43vh;
+}
+
+.contact-margin {
+	margin-top: 16vh;
+}
+
+.custom-ul {
+	list-style-image: url('../images/dot.png');
+}
+
+.custom-ul>li {
+	padding-top: 1.3rem;
+}
+
+.icon-img {
+	background-color: white;
+}
