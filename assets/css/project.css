@@ -1,0 +1,40 @@
+.project {
+	color: white;
+}
+
+.project-header {
+	font-size: 3vw;
+}
+
+.project-header-back {
+	font-size: 6vw;
+	margin-top: -3rem;
+	margin-left: -3rem;
+	color: rgba(255, 255, 255, 0.1);
+}
+
+.project-subheader {
+	font-size: 1.5vw;
+	font-family: InterBold;
+}
+
+.project-content {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.project-profile {
+	margin-top: 1.5rem;
+	height: 43vh;
+}
+
+.project-margin {
+	margin-top: 8vh;
+}
+
+.custom-ul {
+	list-style-image: url('../images/dot.png');
+}
+
+.custom-ul>li {
+	padding-top: 1.3rem;
+}
