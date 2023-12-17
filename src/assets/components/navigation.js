@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
@@ -6,6 +6,7 @@ import Link from "./link";
 import LinkMobile from "./link_mobile";
 import logo from "../images/logo.svg";
 import { Outlet } from "react-router-dom";
+import { DarkModeSwitch } from "react-toggle-dark-mode";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -15,17 +16,22 @@ const navigation = [
   { name: "Contact", href: "/contact" },
 ];
 
-function Navigation(active) {
+function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isDarkMode, setDarkMode] = useState(false);
+
+  const toggleTheme = () => {
+    setDarkMode(!isDarkMode);
+  };
 
   return (
     <>
-      <header className="absolute inset-x-0 top-0 z-50">
+      <header className={`absolute inset-x-0 top-0 z-50 ${isDarkMode}`}>
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
             <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Lovanto</span>
-              <img className="h-8 w-auto" src={logo} alt="" />
+              <img className="h-8 w-auto logo-rotate" src={logo} alt="" />
             </a>
           </div>
           <div className="flex lg:hidden">
@@ -40,10 +46,14 @@ function Navigation(active) {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <Link name={item.name} href={item.href} active={active} />
+              <Link name={item.name} href={item.href} />
             ))}
           </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">&nbsp;</div>
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+            <div>
+              <DarkModeSwitch checked={isDarkMode} onChange={toggleTheme} size={30} />
+            </div>
+          </div>
         </nav>
         <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
           <div className="fixed inset-0 z-50" />
@@ -73,12 +83,18 @@ function Navigation(active) {
                   ))}
                 </div>
               </div>
+
+              <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+                <div>
+                  <DarkModeSwitch checked={isDarkMode} onChange={toggleTheme} size={30} />
+                </div>
+              </div>
             </div>
           </Dialog.Panel>
         </Dialog>
       </header>
 
-      <Outlet />
+      <Outlet context={[isDarkMode]} />
     </>
   );
 }
