@@ -1,31 +1,32 @@
+/* DARK MODE ON */
 .true {
   background-color: #141414 !important;
   color: #fff !important;
   transition: 1s;
-
-  @nest .logo-rotate {
-    transform: rotate(-180deg);
-    transition: 1s;
-  }
-
-  @nest .bg-blue-600 {
-    background-color: #ea580c;
-  }
-
-  @nest .text-gray-600 {
-    color: #9ca3af !important;
-  }
-
-  @nest .text-gray-900 {
-    color: #f3f4f6 !important;
-  }
+}
+.true .logo-rotate {
+  transform: rotate(-180deg);
+  transition: 1s;
 }
 
+.true .bg-blue-600 {
+  background-color: #ea580c;
+}
+
+.true .text-gray-600 {
+  color: #9ca3af !important;
+}
+
+.true .text-gray-900 {
+  color: #f3f4f6 !important;
+}
+
+/* LIGHT MODE ON */
 .false {
   transition: 1s;
+}
 
-  @nest .logo-rotate {
-    transform: rotate(0deg);
-    transition: 1s;
-  }
+.false .logo-rotate {
+  transform: rotate(0deg);
+  transition: 1s;
 }
