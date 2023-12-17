@@ -5,8 +5,8 @@ import resume from "../rifky_lovanto-resume.pdf";
 function Home() {
   const [isDarkMode] = useOutletContext();
   return (
-    <div className={`h-screen flex items-center justify-center  ${isDarkMode}`}>
-      <div className="fixed isolate px-6 lg:px-8">
+    <div className={`h-screen flex items-center justify-center ${isDarkMode}`}>
+      <div className="isolate px-6 lg:px-8">
         <div
           className="fixed inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"
