@@ -13,35 +13,3 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
-
-.true {
-  background-color: #141414 !important;
-  color: #fff !important;
-  transition: 1s;
-
-  .logo-rotate {
-    transform: rotate(-180deg);
-    transition: 1s;
-  }
-
-  .bg-blue-600 {
-    background-color: #ea580c;
-  }
-
-  .text-gray-600 {
-    color: #9ca3af !important;
-  }
-
-  .text-gray-900 {
-    color: #f3f4f6 !important;
-  }
-}
-
-.false {
-  transition: 1s;
-
-  .logo-rotate {
-    transform: rotate(0deg);
-    transition: 1s;
-  }
-}
