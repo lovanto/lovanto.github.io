@@ -10,7 +10,7 @@ function Contact() {
       <OrangeShard />
       <form action="#" method="POST" className="mx-auto mt-2 max-w-xl">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact Me</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact</h2>
         </div>
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2 mt-16">
           <div>

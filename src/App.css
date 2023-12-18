@@ -1,7 +1,15 @@
+.bg-white {
+  transition: 0.5;
+}
+
+.border-custom {
+  border-color: #141414 !important;
+}
+
 /* DARK MODE ON */
 .true {
   background-color: #141414 !important;
-  color: #fff !important;
+  color: #f3f4f6 !important;
   transition: 1s;
 }
 .true .logo-rotate {
@@ -14,11 +22,15 @@
 }
 
 .true .text-gray-600 {
-  color: #9ca3af !important;
+  color: #c1c6cf !important;
 }
 
 .true .text-gray-900 {
   color: #f3f4f6 !important;
+}
+
+.true .bg-gray-500 {
+  background-color: #f3f4f6;
 }
 
 /* LIGHT MODE ON */

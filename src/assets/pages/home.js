@@ -14,11 +14,8 @@ function Home() {
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Hi, I'm Lovanto</h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              I'm fresh graduate with honors from Telkom University with a bachelor's degree in computer software
-              engineering, where I also worked as a laboratory assistant at the informatics laboratory. In my most
-              recent intern role, I contributed to creating a restful API using Node.js and Golang. My hobbies are
-              playing games especially on the testing stage, and reading comics, and I am always eager to expand my
-              knowledge and skills in the field.
+              I am Software Engineer and Mobile Development enthusiast currently a fresh graduate with honors from
+              Telkom University, Indonesia.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
