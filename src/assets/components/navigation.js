@@ -19,6 +19,16 @@ const navigation = [
 function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isDarkMode, setDarkMode] = useState(false);
+  const [colorChange, setColorChange] = useState(false);
+
+  const changeNavbarColor = () => {
+    if (window.scrollY >= 20) {
+      setColorChange(true);
+    } else {
+      setColorChange(false);
+    }
+  };
+  window.addEventListener("scroll", changeNavbarColor);
 
   const toggleTheme = () => {
     setDarkMode(!isDarkMode);
@@ -26,7 +36,7 @@ function Navigation() {
 
   return (
     <>
-      <header className={`absolute inset-x-0 top-0 z-50 ${isDarkMode}`}>
+      <header className={`fixed inset-x-0 top-0 z-50 ${isDarkMode} ${colorChange ? "bg-white" : ""}`}>
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
             <a href="/" className="-m-1.5 p-1.5">
