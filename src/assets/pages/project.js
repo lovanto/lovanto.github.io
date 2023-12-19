@@ -1,6 +1,4 @@
 import { useOutletContext } from "react-router-dom";
-import OrangeShard from "../components/orange_shard";
-import BlueShard from "../components/blue_shard";
 
 import project from "../data/project";
 
@@ -29,11 +27,11 @@ import project from "../data/project";
 // ];
 
 function Project() {
-  const [isDarkMode] = useOutletContext();
+  const [isDarkMode, backgroundTop, backgroundBottom] = useOutletContext();
   return (
     <div className={`items-center justify-center ${isDarkMode}`}>
       <div className="isolate px-6 lg:px-8">
-        <OrangeShard />
+        {backgroundTop}
         <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl mt-6">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-6">Project</h2>
           <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
@@ -52,26 +50,8 @@ function Project() {
               </div>
             ))}
           </div>
-          {/* {project.map((product, index) => (
-              <a key={index} href={product.href} className="group">
-                <div className="xl:w-96 xl:h-60 relative z-10 overflow-hidden rounded-lg xl:aspect-h-8 xl:aspect-w-7 blur-sm">
-                  <img
-                    src={product.imageSrc}
-                    alt={product.imageAlt}
-                    className="h-full w-full object-cover object-left"
-                  />
-                </div>
-                <div className="xl:w-96 xl:h-60 relative z-50 overflow-hidden xl:aspect-h-8 xl:aspect-w-7 p-1 -mt-60">
-                  <img
-                    src={product.imageSrc}
-                    alt={product.imageAlt}
-                    className="h-full w-full object-cover object-left rounded-lg"
-                  />
-                </div>
-              </a>
-            ))} */}
         </div>
-        <BlueShard />
+        {backgroundBottom}
       </div>
     </div>
   );

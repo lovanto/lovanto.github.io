@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import useLocalStorage from "use-local-storage";
 
 import Link from "./link";
 import LinkMobile from "./link_mobile";
 import logo from "../images/logo.svg";
 import { Outlet } from "react-router-dom";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
+import OrangeShard from "./orange_shard";
+import BlueShard from "./blue_shard";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -15,10 +18,18 @@ const navigation = [
   // { name: "Contact", href: "/contact" },
 ];
 
+let backgroundTop = null;
+let backgroundBottom = null;
+
 function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [isDarkMode, setDarkMode] = useState(false);
   const [colorChange, setColorChange] = useState(false);
+  const [isDarkMode, setDarkMode] = useLocalStorage(false);
+
+  if (backgroundTop === null && !isDarkMode) {
+    backgroundTop = <OrangeShard />;
+    backgroundBottom = <BlueShard />;
+  }
 
   const changeNavbarColor = () => {
     if (window.scrollY >= 20) {
@@ -31,6 +42,13 @@ function Navigation() {
 
   const toggleTheme = () => {
     setDarkMode(!isDarkMode);
+    if (!isDarkMode) {
+      backgroundTop = null;
+      backgroundBottom = null;
+    } else {
+      backgroundTop = <OrangeShard />;
+      backgroundBottom = <BlueShard />;
+    }
   };
 
   return (
@@ -103,7 +121,7 @@ function Navigation() {
         </Dialog>
       </header>
 
-      <Outlet context={[isDarkMode]} />
+      <Outlet context={[isDarkMode, backgroundTop, backgroundBottom]} />
     </>
   );
 }

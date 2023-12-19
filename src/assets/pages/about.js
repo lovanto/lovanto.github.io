@@ -1,6 +1,4 @@
 import { useOutletContext } from "react-router";
-import OrangeShard from "../components/orange_shard";
-import BlueShard from "../components/blue_shard";
 
 import profile from "../images/file.enc";
 import github from "../images/github.svg";
@@ -16,12 +14,12 @@ import educationData from "../data/educational_experience";
 import organizationalData from "../data/organizational_experience";
 
 function About() {
-  const [isDarkMode] = useOutletContext();
+  const [isDarkMode, backgroundTop, backgroundBottom] = useOutletContext();
 
   return (
     <div className={`flex items-center justify-center -mt-24 ${isDarkMode}`}>
       <div className="isolate px-6 lg:px-8">
-        <OrangeShard />
+        {backgroundTop}
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="px-4 sm:px-0">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">About Me</h2>
@@ -82,7 +80,7 @@ function About() {
             ))}
           </ul>
         </div>
-        <BlueShard />
+        {backgroundBottom}
       </div>
     </div>
   );

@@ -1,13 +1,11 @@
 import { useOutletContext } from "react-router";
-import OrangeShard from "../components/orange_shard";
-import BlueShard from "../components/blue_shard";
 
 function Contact() {
-  const [isDarkMode] = useOutletContext();
+  const [isDarkMode, backgroundTop, backgroundBottom] = useOutletContext();
 
   return (
     <div className={`h-screen flex items-center justify-center isolate px-6 py-24 sm:py-32 lg:px-8 ${isDarkMode}`}>
-      <OrangeShard />
+      {backgroundTop}
       <form action="#" method="POST" className="mx-auto mt-2 max-w-xl">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact</h2>
@@ -78,8 +76,8 @@ function Contact() {
             Let's talk
           </button>
         </div>
-      </form>{" "}
-      <BlueShard />
+      </form>
+      {backgroundBottom}
     </div>
   );
 }

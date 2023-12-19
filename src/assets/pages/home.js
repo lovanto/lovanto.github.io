@@ -1,15 +1,12 @@
 import { useOutletContext } from "react-router";
 
 import resume from "../rifky_lovanto-resume.pdf";
-import OrangeShard from "../components/orange_shard";
-import BlueShard from "../components/blue_shard";
-
 function Home() {
-  const [isDarkMode] = useOutletContext();
+  const [isDarkMode, backgroundTop, backgroundBottom] = useOutletContext();
   return (
     <div className={`h-screen flex items-center justify-center ${isDarkMode}`}>
       <div className="isolate px-6 lg:px-8">
-        <OrangeShard />
+        {backgroundTop}
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Hi, I'm Lovanto</h1>
@@ -34,7 +31,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <BlueShard />
+        {backgroundBottom}
       </div>
     </div>
   );
