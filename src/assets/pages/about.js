@@ -70,7 +70,7 @@ function About() {
           </ul>
 
           <hr className="h-px my-8 bg-gray-500 border-0"></hr>
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Organizational Level</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Organizational Experiences</h2>
           <ul
             aria-label="User feed"
             role="feed"

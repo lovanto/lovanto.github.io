@@ -1,0 +1,81 @@
+const products = [
+  {
+    name: "Portfolio",
+    description: "Work from home accessories",
+    href: "/",
+    imageSrc: "https://raw.githubusercontent.com/lovanto/portfolio/master/src/assets/project/portfolio.png",
+    imageAlt: "Tall slender porcelain bottle with natural clay textured body and cork stopper.",
+  },
+  {
+    name: "Telyukost",
+    description: "Work from home accessories",
+    href: "/",
+    imageSrc: "https://raw.githubusercontent.com/lovanto/portfolio/master/src/assets/project/telyukost.png",
+    imageAlt: "Tall slender porcelain bottle with natural clay textured body and cork stopper.",
+  },
+  {
+    name: "BAP Website of Informatics Laboratory",
+    description: "Work from home accessories",
+    href: "/",
+    imageSrc: "https://raw.githubusercontent.com/lovanto/portfolio/master/src/assets/project/iflab-bap.png",
+    imageAlt: "Olive drab green insulated bottle with flared screw lid and flat top.",
+  },
+  {
+    name: "Informatics Laboratory TV",
+    description: "Work from home accessories",
+    href: "/",
+    imageSrc: "https://raw.githubusercontent.com/lovanto/portfolio/master/src/assets/project/iflab-tv.png",
+    imageAlt: "Person using a pen to cross a task off a productivity paper card.",
+  },
+  {
+    name: "Covid-19 Report Website",
+    description: "Work from home accessories",
+    href: "/",
+    imageSrc: "https://raw.githubusercontent.com/lovanto/portfolio/master/src/assets/project/covid.png",
+    imageAlt: "Hand holding black machined steel mechanical pencil with brass tip and top.",
+  },
+  {
+    name: "Old Portfolio",
+    description: "Work from home accessories",
+    href: "/",
+    imageSrc: "https://raw.githubusercontent.com/lovanto/portfolio/master/src/assets/project/old_portfolio.png",
+    imageAlt: "Tall slender porcelain bottle with natural clay textured body and cork stopper.",
+  },
+  {
+    name: "Aurora Project",
+    description: "Work from home accessories",
+    href: "/",
+    imageSrc: "https://raw.githubusercontent.com/lovanto/portfolio/master/src/assets/project/aurora.jpg",
+    imageAlt: "Tall slender porcelain bottle with natural clay textured body and cork stopper.",
+  },
+  {
+    name: "Money Management Mobile App",
+    description: "Work from home accessories",
+    href: "/",
+    imageSrc: "https://raw.githubusercontent.com/lovanto/portfolio/master/src/assets/project/mma.png",
+    imageAlt: "Olive drab green insulated bottle with flared screw lid and flat top.",
+  },
+  {
+    name: "Apotek Cashier Apps",
+    description: "Work from home accessories",
+    href: "/",
+    imageSrc: "https://raw.githubusercontent.com/lovanto/portfolio/master/src/assets/project/cashier.png",
+    imageAlt: "Person using a pen to cross a task off a productivity paper card.",
+  },
+  {
+    name: "Cashier App at PT. Tirta Kencana Alam",
+    description: "Work from home accessories",
+    href: "/",
+    imageSrc: "https://raw.githubusercontent.com/lovanto/portfolio/master/src/assets/project/pam_air.png",
+    imageAlt: "Hand holding black machined steel mechanical pencil with brass tip and top.",
+  },
+  {
+    name: "Waranti Sparepart Management",
+    description: "Work from home accessories",
+    href: "/",
+    imageSrc: "https://raw.githubusercontent.com/lovanto/portfolio/master/src/assets/project/waranty.png",
+    imageAlt: "Tall slender porcelain bottle with natural clay textured body and cork stopper.",
+  },
+];
+
+export default products;
