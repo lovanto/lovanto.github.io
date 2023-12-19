@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.4cb50e87.css",
+    "main.js": "/portfolio/static/js/main.90a837df.js",
+    "static/js/787.7da95b79.chunk.js": "/portfolio/static/js/787.7da95b79.chunk.js",
+    "static/media/rifky_lovanto-resume.pdf": "/portfolio/static/media/rifky_lovanto-resume.3c4766d74fe46c63cf1c.pdf",
+    "static/media/file.enc": "/portfolio/static/media/file.4122574f2d8be23e6207.enc",
+    "static/media/logo.svg": "/portfolio/static/media/logo.9ee6c03c2b89b87fc0889cc570d823dc.svg",
+    "static/media/whatsapp.svg": "/portfolio/static/media/whatsapp.c47649333180d18227fa2ec4533f23ff.svg",
+    "static/media/email.svg": "/portfolio/static/media/email.e356d529341b8a83795188d3cb82b253.svg",
+    "static/media/github.svg": "/portfolio/static/media/github.3d4af405b78bfbfda9d55fc9e6cab96f.svg",
+    "static/media/linkedin.svg": "/portfolio/static/media/linkedin.972dba76898620c6dc09c3e2ae3c3c9a.svg",
+    "index.html": "/portfolio/index.html",
+    "main.4cb50e87.css.map": "/portfolio/static/css/main.4cb50e87.css.map",
+    "main.90a837df.js.map": "/portfolio/static/js/main.90a837df.js.map",
+    "787.7da95b79.chunk.js.map": "/portfolio/static/js/787.7da95b79.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4cb50e87.css",
+    "static/js/main.90a837df.js"
+  ]
+}
