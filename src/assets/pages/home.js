@@ -2,11 +2,10 @@ import { useOutletContext } from "react-router";
 
 import resume from "../rifky_lovanto-resume.pdf";
 function Home() {
-  const [isDarkMode, backgroundTop, backgroundBottom] = useOutletContext();
+  const [isDarkMode, background] = useOutletContext();
   return (
     <div className={`h-screen flex items-center justify-center ${isDarkMode}`}>
       <div className="isolate px-6 lg:px-8">
-        {backgroundTop}
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Hi, I'm Lovanto</h1>
@@ -31,7 +30,7 @@ function Home() {
             </div>
           </div>
         </div>
-        {backgroundBottom}
+        {background}
       </div>
     </div>
   );

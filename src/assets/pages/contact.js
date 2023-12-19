@@ -1,11 +1,10 @@
 import { useOutletContext } from "react-router";
 
 function Contact() {
-  const [isDarkMode, backgroundTop, backgroundBottom] = useOutletContext();
+  const [isDarkMode, background] = useOutletContext();
 
   return (
     <div className={`h-screen flex items-center justify-center isolate px-6 py-24 sm:py-32 lg:px-8 ${isDarkMode}`}>
-      {backgroundTop}
       <form action="#" method="POST" className="mx-auto mt-2 max-w-xl">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact</h2>
@@ -77,7 +76,7 @@ function Contact() {
           </button>
         </div>
       </form>
-      {backgroundBottom}
+      {background}
     </div>
   );
 }

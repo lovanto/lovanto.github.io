@@ -10,6 +10,7 @@ import { Outlet } from "react-router-dom";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
 import OrangeShard from "./orange_shard";
 import BlueShard from "./blue_shard";
+import Particle from "../components/particles";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -18,17 +19,22 @@ const navigation = [
   // { name: "Contact", href: "/contact" },
 ];
 
-let backgroundTop = null;
-let backgroundBottom = null;
+let background = null;
 
 function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [colorChange, setColorChange] = useState(false);
   const [isDarkMode, setDarkMode] = useLocalStorage(false);
 
-  if (backgroundTop === null && !isDarkMode) {
-    backgroundTop = <OrangeShard />;
-    backgroundBottom = <BlueShard />;
+  if (background === null && !isDarkMode) {
+    background = (
+      <div>
+        <OrangeShard />
+        <BlueShard />
+      </div>
+    );
+  } else if (isDarkMode === true) {
+    background = <Particle />;
   }
 
   const changeNavbarColor = () => {
@@ -43,11 +49,14 @@ function Navigation() {
   const toggleTheme = () => {
     setDarkMode(!isDarkMode);
     if (!isDarkMode) {
-      backgroundTop = null;
-      backgroundBottom = null;
+      background = <Particle />;
     } else {
-      backgroundTop = <OrangeShard />;
-      backgroundBottom = <BlueShard />;
+      background = (
+        <div>
+          <OrangeShard />
+          <BlueShard />
+        </div>
+      );
     }
   };
 
@@ -121,7 +130,7 @@ function Navigation() {
         </Dialog>
       </header>
 
-      <Outlet context={[isDarkMode, backgroundTop, backgroundBottom]} />
+      <Outlet context={[isDarkMode, background]} />
     </>
   );
 }
