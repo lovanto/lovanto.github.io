@@ -11,8 +11,8 @@ function Home() {
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Hi, I'm Lovanto</h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              I am Software Engineer and Mobile Development enthusiast currently a fresh graduate with honors from
-              Telkom University, Indonesia.
+              I am Software Engineer and Web Development enthusiast currently a fresh graduate with honors from Telkom
+              University, Indonesia.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
