@@ -1,4 +1,4 @@
-import { useOutletContext } from "react-router";
+import { useOutletContext } from "react-router-dom";
 
 import profile from "../images/file.enc";
 import github from "../images/github.svg";

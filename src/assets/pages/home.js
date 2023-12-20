@@ -1,4 +1,4 @@
-import { useOutletContext } from "react-router";
+import { useOutletContext } from "react-router-dom";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 
 import resume from "../rifky_lovanto-resume.pdf";

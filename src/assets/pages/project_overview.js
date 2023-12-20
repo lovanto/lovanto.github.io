@@ -1,9 +1,10 @@
 import Avatar from "react-avatar";
 import logo from "../images/logo.svg";
-import { useOutletContext } from "react-router-dom";
+import { useOutletContext, useParams } from "react-router-dom";
 
 function ComingSoon() {
   const [isDarkMode, background] = useOutletContext();
+  const params = useParams();
 
   return (
     <div className={`h-screen flex items-center justify-center ${isDarkMode}`}>
@@ -11,7 +12,7 @@ function ComingSoon() {
         <div className="text-center">
           <Avatar className="h-8 w-auto mb-6" src={logo} alt="" />
           <h1 className="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">Coming Soon</h1>
-          <p className="mt-6 text-base leading-7 text-gray-600">Sorry, we will back soon.</p>
+          <p className="mt-6 text-base leading-7 text-gray-600">Sorry {params.name}, we will back soon.</p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
               href="/"
