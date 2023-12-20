@@ -73,7 +73,7 @@ function Navigation() {
           <div className="flex lg:hidden">
             <button
               type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-600"
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Main menu</span>
@@ -94,8 +94,8 @@ function Navigation() {
         <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
           <div className="fixed inset-0 z-50" />
           <Dialog.Panel
-            className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 
-            sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+            className={`fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 
+            sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 ${isDarkMode} ${colorChange ? "bg-white" : ""}`}
           >
             <div className="flex items-center justify-between">
               <a href="/" className="-m-1.5 p-1.5">
@@ -104,7 +104,7 @@ function Navigation() {
               </a>
               <button
                 type="button"
-                className="-m-2.5 rounded-md p-2.5 text-gray-700"
+                className="-m-2.5 rounded-md p-2.5 text-gray-600 font-black"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="sr-only">Close menu</span>
@@ -117,12 +117,14 @@ function Navigation() {
                   {navigation.map((item) => (
                     <LinkMobile name={item.name} href={item.href} />
                   ))}
-                </div>
-              </div>
-
-              <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                <div>
-                  <DarkModeSwitch checked={isDarkMode} onChange={toggleTheme} size={30} />
+                  <div>
+                    <DarkModeSwitch
+                      checked={isDarkMode}
+                      onChange={toggleTheme}
+                      size={30}
+                      className="sm:-mt-52 sm:ms-40"
+                    />
+                  </div>
                 </div>
               </div>
             </div>

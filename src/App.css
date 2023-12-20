@@ -18,7 +18,7 @@
 }
 
 .true .bg-blue-600 {
-  background-color: #ea580c;
+  background-color: #ea580c !important;
 }
 
 .true .text-gray-600 {
@@ -30,7 +30,15 @@
 }
 
 .true .bg-gray-500 {
-  background-color: #f3f4f6;
+  background-color: #f3f4f6 !important;
+}
+
+.true .text-gray-600 {
+  color: #f3f4f6 !important;
+}
+
+.true .hover\:bg-gray-50:hover {
+  color: #141414 !important;
 }
 
 /* LIGHT MODE ON */
