@@ -122,7 +122,7 @@ function Navigation() {
                       checked={isDarkMode}
                       onChange={toggleTheme}
                       size={30}
-                      className="sm:-mt-52 sm:ms-40"
+                      className="sm:-mt-52 sm:ms-40 mobile-toggle"
                     />
                   </div>
                 </div>

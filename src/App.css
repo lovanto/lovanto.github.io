@@ -56,4 +56,9 @@
   .mt-mobile {
     margin-top: 4rem !important;
   }
+
+  .mobile-toggle {
+    margin-top: -13rem !important;
+    margin-left: 9rem !important;
+  }
 }
