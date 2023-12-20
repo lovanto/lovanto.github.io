@@ -18,7 +18,7 @@
 }
 
 .true .bg-blue-600 {
-  background-color: #ea580c;
+  background-color: #ea580c !important;
 }
 
 .true .text-gray-600 {
@@ -30,7 +30,15 @@
 }
 
 .true .bg-gray-500 {
-  background-color: #f3f4f6;
+  background-color: #f3f4f6 !important;
+}
+
+.true .text-gray-600 {
+  color: #f3f4f6 !important;
+}
+
+.true .hover\:bg-gray-50:hover {
+  color: #141414 !important;
 }
 
 /* LIGHT MODE ON */
@@ -41,4 +49,16 @@
 .false .logo-rotate {
   transform: rotate(0deg);
   transition: 1s;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 640px) {
+  .mt-mobile {
+    margin-top: 4rem !important;
+  }
+
+  .mobile-toggle {
+    margin-top: -13rem !important;
+    margin-left: 9rem !important;
+  }
 }

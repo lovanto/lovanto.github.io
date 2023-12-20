@@ -21,18 +21,18 @@ function About() {
       <div className="isolate px-6 lg:px-8">
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="px-4 sm:px-0">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">About Me</h2>
-            <div className="columns-2">
-              <p className="mt-2 max-w-2xl text-sm leading-6 text-gray-900">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mt-mobile">About Me</h2>
+            <div className="sm:columns-2 pt-6">
+              <img className="inline-block pb-4 h-72 w-72 ring-0" src={profile} alt="" />
+              <p className="max-w-2xl text-sm leading-6 text-gray-900 ms-0 md:-ms-4 lg:-ms-4">
                 I'm fresh graduate with honors from Telkom University with a bachelor's degree in computer software
                 engineering, where I also worked as a laboratory assistant at the informatics laboratory. In my most
                 recent intern role, I contributed to creating a restful API using Node.js and Golang. My hobbies are
                 playing games especially on the testing stage, and reading comics, and I am always eager to expand my
                 knowledge and skills in the field.
               </p>
-              <img className="inline-block ms-10 pb-4 h-72 w-72 ring-0" src={profile} alt="" />
             </div>
-            <div className="flex justify-between -space-x-1 overflow-hidden -mt-12 w-48">
+            <div className="flex justify-between items-end overflow-hidden mt-2 md:-mt-12 lg:-mt-12 w-48 md:ms-80 lg:ms-80">
               <SosMedIcon link="/" source={linkedin} name="linkedin" />
               <SosMedIcon link="/" source={github} name="github" />
               <SosMedIcon link="/" source={gmail} name="gmail" />
