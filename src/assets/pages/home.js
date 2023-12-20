@@ -1,4 +1,5 @@
 import { useOutletContext } from "react-router";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 import resume from "../rifky_lovanto-resume.pdf";
 function Home() {
@@ -30,6 +31,7 @@ function Home() {
             </div>
           </div>
         </div>
+        <SpeedInsights />
         {background}
       </div>
     </div>
