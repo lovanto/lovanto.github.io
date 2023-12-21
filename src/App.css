@@ -75,7 +75,18 @@
   }
 
   .mobile-toggle {
-    margin-top: -13rem !important;
-    margin-left: 9rem !important;
+    margin-top: -16.3rem !important;
+    margin-left: 9.5rem !important;
+  }
+}
+
+@media (max-width: 860px) {
+  .mt-mobile {
+    margin-top: 4rem !important;
+  }
+
+  .mobile-toggle {
+    margin-top: -16.3rem !important;
+    margin-left: 10rem;
   }
 }
