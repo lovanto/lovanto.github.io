@@ -1,4 +1,4 @@
-import { useOutletContext } from "react-router";
+import { useOutletContext } from "react-router-dom";
 
 function Contact() {
   const [isDarkMode, background] = useOutletContext();

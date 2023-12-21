@@ -1,6 +1,6 @@
 import Avatar from "react-avatar";
 import logo from "../images/logo.svg";
-import { useOutletContext } from "react-router";
+import { useOutletContext } from "react-router-dom";
 
 function ComingSoon() {
   const [isDarkMode, background] = useOutletContext();

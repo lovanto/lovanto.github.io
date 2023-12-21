@@ -6,12 +6,21 @@
   border-color: #141414 !important;
 }
 
+.w-carousel {
+  width: 86%;
+}
+
 /* DARK MODE ON */
 .true {
   background-color: #141414 !important;
   color: #f3f4f6 !important;
   transition: 1s;
 }
+
+.true .bg-white {
+  background-color: #181818 !important;
+}
+
 .true .logo-rotate {
   transform: rotate(-180deg);
   transition: 1s;
@@ -39,6 +48,14 @@
 
 .true .hover\:bg-gray-50:hover {
   color: #141414 !important;
+}
+
+.true .bg-blue-100 {
+  background-color: #ffe0b2;
+}
+
+.true .text-blue-800 {
+  color: #ef6c00;
 }
 
 /* LIGHT MODE ON */
