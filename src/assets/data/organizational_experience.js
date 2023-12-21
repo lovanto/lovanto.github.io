@@ -30,7 +30,7 @@ const organizationalExperienceData = [
     status: "Member",
   },
   {
-    company: "BITCOM (Bandung IT Community) -",
+    company: "BITCOM (Bandung IT Community)",
     date: "Sep 2018 - Mar 2019",
     status: "Member",
   },
