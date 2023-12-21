@@ -9,6 +9,7 @@ import Contact from "./assets/pages/contact";
 import NotFound from "./assets/pages/not_found";
 import Navigation from "./assets/components/navigation";
 import ComingSoon from "./assets/pages/coming_soon";
+import ProjectOverview from "./assets/pages/project_overview";
 
 function App() {
   return (
@@ -18,8 +19,9 @@ function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="project" element={<Project />} />
-          <Route path="project/:name" element={<ComingSoon />} />
+          <Route path="project/:name" element={<ProjectOverview />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="soon" element={<ComingSoon />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
