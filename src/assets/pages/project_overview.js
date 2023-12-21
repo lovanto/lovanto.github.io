@@ -55,9 +55,9 @@ function ComingSoon() {
 
   return (
     <div className={`flex items-center justify-center -mt-24 ${isDarkMode}`}>
-      <div className="isolate px-6 lg:px-8">
+      <div className="isolate px-6 md:pt-20 lg:px-8">
         <div className="mx-auto max-w-5xl py-32 sm:py-48 lg:py-56 -mt-6">
-          <div className="px-4 sm:px-0 bg-white p-14 rounded-lg shadow-sm">
+          <div className="px-4 sm:px-0 bg-white p-14 rounded-lg shadow-md">
             <h2 className="text-5xl font-bold tracking-tight text-gray-900 mt-mobile -mt-2 mb-6 px-16 capitalize">
               {result.title}
             </h2>
