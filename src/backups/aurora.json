@@ -1,0 +1,23 @@
+{
+  "title": "Aurora Project",
+  "media": [
+    "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/aurora1.png",
+    "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/aurora2.png"
+  ],
+  "description": "Founded Telyukost for a thesis, Telyukost is a platform that focuses on online board search and ordering services and is based at Telkom University. Telyukost itself has two applications that are integrated with each other, namely the user application installed on GCP and the boarding house owner application installed on Alibaba Cloud.",
+  "badge": ["react.js", "sass", "design system"],
+  "collaborator": [
+    {
+      "value": "Rifky Lovanto as Fullstack Developer",
+      "url": "https://www.linkedin.com/in/lovanto/"
+    },
+    {
+      "value": "Ganesha Danu Enastika as Project Manager",
+      "url": "https://github.com/BlinfoldKing"
+    },
+    {
+      "value": "Alfi Nasution as Fullstack Developer",
+      "url": "https://github.com/alfi2811"
+    }
+  ]
+}

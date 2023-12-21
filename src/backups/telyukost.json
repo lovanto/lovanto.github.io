@@ -1,0 +1,48 @@
+{
+  "title": "Telyukost",
+  "media": [
+    "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/telyukost1.png",
+    "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/telyukost2.png"
+  ],
+  "description": "Founded Telyukost for a thesis, Telyukost is a platform that focuses on online board search and ordering services and is based at Telkom University. Telyukost itself has two applications that are integrated with each other, namely the user application installed on GCP and the boarding house owner application installed on Alibaba Cloud.",
+  "badge": [
+    "node.js",
+    "mongodb",
+    "react.js",
+    "next.js",
+    "redux",
+    "axios",
+    "gcp",
+    "alibaba cloud",
+    "basic auth",
+    "jwt auth",
+    "third-party login",
+    "encrypt data"
+  ],
+  "collaborator": [
+    {
+      "value": "Rifky Lovanto as Backend Developer",
+      "url": "https://www.linkedin.com/in/lovanto/"
+    },
+    {
+      "value": "Maulana Akbar Ramadhan as Frontend Developer",
+      "url": "https://www.linkedin.com/in/maulana-akbar-ramadhan/"
+    },
+    {
+      "value": "Ihsan Asfari Hanifan as Frontend Developer",
+      "url": "https://www.linkedin.com/in/ihsan-asfari-hanifan/"
+    },
+    {
+      "value": "Dzakwan Daffa Hidayatullah as Quality Assurance",
+      "url": "https://www.linkedin.com/in/dzakwandh/"
+    },
+    {
+      "value": "Rizal Maidan Firdaus as UI/UX Designer",
+      "url": "https://www.linkedin.com/in/izalmfrds/"
+    },
+    {
+      "value": "Gilang Gumelar as Database Engineer",
+      "url": "https://www.linkedin.com/in/gilgmlr/"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Old Portfolio",
+  "media": [
+    "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/old_portfolio1.png",
+    "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/old_portfolio2.png"
+  ],
+  "description": "Founded Telyukost for a thesis, Telyukost is a platform that focuses on online board search and ordering services and is based at Telkom University. Telyukost itself has two applications that are integrated with each other, namely the user application installed on GCP and the boarding house owner application installed on Alibaba Cloud.",
+  "badge": ["react.js", "sass"],
+  "collaborator": [
+    {
+      "value": "Rifky Lovanto as Fullstack Developer",
+      "url": "https://www.linkedin.com/in/lovanto/"
+    }
+  ]
+}

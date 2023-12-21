@@ -1,0 +1,19 @@
+{
+  "title": "Cashier App at PT. Tirta Kencana Alam",
+  "media": [
+    "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/pam_air1.jpg",
+    "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/pam_air2.jpg"
+  ],
+  "description": "Founded Telyukost for a thesis, Telyukost is a platform that focuses on online board search and ordering services and is based at Telkom University. Telyukost itself has two applications that are integrated with each other, namely the user application installed on GCP and the boarding house owner application installed on Alibaba Cloud.",
+  "badge": ["php", "codeigniter", "html", "bootstrap", "css", "mysql"],
+  "collaborator": [
+    {
+      "value": "Rifky Lovanto as Fullstack Developer",
+      "url": "https://www.linkedin.com/in/lovanto/"
+    },
+    {
+      "value": "Rifky Lovanto as Fullstack Developer",
+      "url": "https://www.linkedin.com/in/lovanto/"
+    }
+  ]
+}
