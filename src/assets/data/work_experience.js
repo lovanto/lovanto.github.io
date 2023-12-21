@@ -4,7 +4,7 @@ const workExperienceData = [
       "https://media.licdn.com/dms/image/C4D0BAQGVLh28SyAv-g/company-logo_200_200/0/1631315215307?e=1710979200&v=beta&t=QVJwRZAmB0FXfsJsSOBTiWxB_z69q64FOmYmQP2wqQ4",
     company: "PT.Telkom Indonesia",
     date: "Feb 2023 - Jul 2023 · 6 mos",
-    status: "Software Engineering (Internship)",
+    status: "Backend Developer (Internship)",
     description: `Join development in team after finish apprenticeship to work in real case in Telkom Indonesia. 
       Work in DPE team to handle web portal for internal Telkom Indonesia to manage internship program called
       sustainable talent nurturing program. In DPE team my task is create and maintenance RESTFul API
@@ -37,7 +37,7 @@ const workExperienceData = [
       "https://media.licdn.com/dms/image/C4D0BAQETCWZFqzrqDg/company-logo_200_200/0/1630490878036?e=1710979200&v=beta&t=n1GR0oxOowa73aJHjlhN-Un6y04egMcxf85z4bdb_No",
     company: "Antrique",
     date: "July 2022 - Aug 2022 · 2 mos",
-    status: "Software Engineering (Internship)",
+    status: "Backend Developer (Internship)",
     description: `AntriQue is an Indonesia-based SaaS startup for face-to-face services that offers end-to-end virtual 
     queuing systems, time delivery analytic services, advertising, and payment services. Create a Restful API written 
     in Golang and deploy it to an AWS server through CI/ CD gitlab, then serve it using Docker.`,
