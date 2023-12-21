@@ -2,7 +2,7 @@ const workExperienceData = [
   {
     image:
       "https://media.licdn.com/dms/image/C4D0BAQGVLh28SyAv-g/company-logo_200_200/0/1631315215307?e=1710979200&v=beta&t=QVJwRZAmB0FXfsJsSOBTiWxB_z69q64FOmYmQP2wqQ4",
-    company: "PT.Telkom University",
+    company: "PT.Telkom Indonesia",
     date: "Feb 2023 - Jul 2023 · 6 mos",
     status: "Software Engineering (Internship)",
     description: `Join development in team after finish apprenticeship to work in real case in Telkom Indonesia. 
@@ -45,7 +45,7 @@ const workExperienceData = [
   {
     image:
       "https://media.licdn.com/dms/image/C4D0BAQGVLh28SyAv-g/company-logo_200_200/0/1631315215307?e=1710979200&v=beta&t=QVJwRZAmB0FXfsJsSOBTiWxB_z69q64FOmYmQP2wqQ4",
-    company: "PT.Telkom University",
+    company: "PT.Telkom Indonesia",
     date: "Feb 2022 - Jan 2023 · 1 yrs",
     status: "Software Engineering (Apprenticeship)",
     description: `Joining learning sustainable talent nurturing program from Telkom Indonesia to learn 
