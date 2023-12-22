@@ -4,8 +4,9 @@
     "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/aurora1.png",
     "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/aurora2.png"
   ],
-  "description": "Founded Telyukost for a thesis, Telyukost is a platform that focuses on online board search and ordering services and is based at Telkom University. Telyukost itself has two applications that are integrated with each other, namely the user application installed on GCP and the boarding house owner application installed on Alibaba Cloud.",
+  "description": "Aurora is Proclub Design System written in React to build consistent user experiences with ease, light, fast and, yet with enough flexibility to support the broad spectrum of Proclub websites. Aurora is built upon systems that form the foundation of our styles such as spacing, typography, and more. Aurora still under Development by Proclub Members.",
   "badge": ["react.js", "sass", "design system"],
+  "link": "https://helloproclub.github.io/Aurora",
   "collaborator": [
     {
       "value": "Rifky Lovanto as Fullstack Developer",

@@ -4,8 +4,9 @@
     "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/iflab-bap1.png",
     "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/iflab-bap2.png"
   ],
-  "description": "Founded Telyukost for a thesis, Telyukost is a platform that focuses on online board search and ordering services and is based at Telkom University. Telyukost itself has two applications that are integrated with each other, namely the user application installed on GCP and the boarding house owner application installed on Alibaba Cloud.",
+  "description": "After become Assistant Laboratory at Informatics Laboratory of Telkom University, the first problem is input BAP always using Assistant Laboratory computer. The solution for this problem is this Apps, with this apps Assistant Practicum can input BAP with the other device. Notes: since 2022 until now still running on local network on Informatics Laboratory of Telkom University",
   "badge": ["php", "html", "css", "bootstrap", "mysql"],
+  "link": "",
   "collaborator": [
     {
       "value": "Rifky Lovanto as Fullstack Developer",
