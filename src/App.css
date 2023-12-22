@@ -69,6 +69,25 @@
 }
 
 /* MOBILE RESPONSIVE */
+@media (max-width: 480px) {
+  .mobile-mode {
+    background-color: transparent;
+
+    --tw-shadow: 0 4px 6px -1px rgba(255, 255, 255, 0.1), 0 2px 4px -2px rgba(255, 255, 255, 0.1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #ffffff00), var(--tw-ring-shadow, 0 0 #ffffff00), var(--tw-shadow);
+  }
+
+  .scale-mobile {
+    scale: 0.9;
+  }
+
+  .w-carousel {
+    width: 100% !important;
+  }
+}
+
+/* TABLET RESPONSIVE */
 @media (max-width: 860px) {
   .mt-mobile {
     margin-top: 4rem !important;
@@ -80,11 +99,8 @@
   }
 }
 
-@media (max-width: 860px) {
-  .mt-mobile {
-    margin-top: 4rem !important;
-  }
+@media (min-width: 720px) {
   .w-carousel {
-    width: 80%;
+    width: 86%;
   }
 }

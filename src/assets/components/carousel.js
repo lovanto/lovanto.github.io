@@ -3,7 +3,7 @@ import { Carousel, IconButton } from "@material-tailwind/react";
 function CarouselDefault({ image1, image2 }) {
   return (
     <Carousel
-      className="rounded-lg ms-16 mb-4 shadow-md w-carousel"
+      className="rounded-lg md:ms-16 sm:ms-0 mb-4 shadow-md w-carousel"
       prevArrow={({ handlePrev }) => (
         <IconButton
           variant="text"

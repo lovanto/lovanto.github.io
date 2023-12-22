@@ -56,9 +56,9 @@ function ComingSoon() {
   return (
     <div className={`flex items-center justify-center -mt-24 ${isDarkMode}`}>
       <div className="isolate px-6 md:pt-20 lg:px-8">
-        <div className="mx-auto max-w-5xl py-32 sm:py-48 lg:py-56 -mt-6">
-          <div className="px-4 sm:px-0 bg-white p-14 rounded-lg shadow-md">
-            <h2 className="text-5xl font-bold tracking-tight text-gray-900 mt-mobile -mt-2 mb-6 px-16 capitalize">
+        <div className="mx-auto max-w-5xl py-32 sm:py-48 lg:py-56 -mt-6 sm:w-full">
+          <div className="px-4 sm:px-0 bg-white p-14 rounded-lg shadow-md mobile-mode">
+            <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-gray-900 mt-mobile -mt-2 mb-6 md:px-16 sm:px-0 capitalize">
               {result.title}
             </h2>
             {isVideoPlayer ? (
@@ -66,20 +66,24 @@ function ComingSoon() {
             ) : (
               <CarouselDefault image1={result.media[0]} image2={result.media[1]} />
             )}
-            <p className="text-md font-semibold leading-6 text-gray-900 ms-0 md:-ms-4 lg:-ms-4 px-20">Description:</p>
-            <p className="text-sm leading-6 text-gray-900 ms-0 md:-ms-4 lg:-ms-4 px-20">{result.description}</p>
-            <div className="flex flex-wrap gap-2 my-3 px-16">
+            <p className="text-md font-semibold leading-6 text-gray-900 ms-0 md:-ms-4 lg:-ms-4 md:px-20 sm:px-0">
+              Description:
+            </p>
+            <p className="text-sm leading-6 text-gray-900 ms-0 md:-ms-4 lg:-ms-4 md:px-20 sm:px-0">
+              {result.description}
+            </p>
+            <div className="flex flex-wrap gap-2 my-3 md:px-16">
               {result.badge.map((item) => (
                 <Badge text={item} />
               ))}
             </div>
-            <p className="text-md mt-6 font-semibold leading-6 text-gray-900 ms-0 md:-ms-4 lg:-ms-4 px-20">
+            <p className="text-md mt-6 font-semibold leading-6 text-gray-900 ms-0 md:-ms-4 lg:-ms-4 md:px-20 sm:px-0">
               Collaborator:
             </p>
-            <p className="text-sm leading-6 text-gray-900 ms-0 md:-ms-4 lg:-ms-4 px-20">
+            <p className="text-sm leading-6 text-gray-900 ms-0 md:-ms-4 lg:-ms-4 md:px-20 sm:px-0">
               Get in touch with us by clicking the badge.
             </p>
-            <div className="flex flex-wrap gap-2 mt-3 px-16">
+            <div className="flex flex-wrap gap-2 mt-3 md:px-16">
               {result.collaborator.map((item) => (
                 <BadgeCollaborator text={item.value} url={item.url} />
               ))}
