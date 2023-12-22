@@ -1,8 +1,12 @@
 {
-  "title": "Informatics Laboratory TV",
-  "media": ["https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/iflab-tv2.mkv"],
-  "description": "Founded Telyukost for a thesis, Telyukost is a platform that focuses on online board search and ordering services and is based at Telkom University. Telyukost itself has two applications that are integrated with each other, namely the user application installed on GCP and the boarding house owner application installed on Alibaba Cloud.",
-  "badge": ["php", "html", "css", "bootstrap", "mysql", "video player"],
+  "title": "BAP Website of Informatics Laboratory",
+  "media": [
+    "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/iflab-bap1.png",
+    "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/iflab-bap2.png"
+  ],
+  "description": "In the middle of his term as a laboratory assistant at Informatics Laboratory of Telkom University, IFLAB got problem to inform student about news, grade, and the other things. So the solution is making a TV program outside practicum room to make sure student watch it before student enter the room.",
+  "badge": ["php", "html", "css", "bootstrap", "mysql"],
+  "link": "https://github.com/iflab-telu/iflab-tv",
   "collaborator": [
     {
       "value": "Rifky Lovanto as Fullstack Developer",

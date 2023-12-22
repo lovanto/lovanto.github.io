@@ -19,7 +19,7 @@ function About() {
   return (
     <div className={`flex items-center justify-center -mt-24 ${isDarkMode}`}>
       <div className="isolate px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div className="mx-auto max-w-2xl py-32 sm:py-48 md:py-32 lg:py-56">
           <div className="px-4 sm:px-0">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mt-mobile">About Me</h2>
             <div className="sm:columns-2 pt-6">
