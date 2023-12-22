@@ -1,7 +1,8 @@
 import { useOutletContext, useParams } from "react-router-dom";
-import CarouselDefault from "../components/carousel";
+import HTMLReactParser from "html-react-parser";
 import axios from "axios";
 
+import CarouselDefault from "../components/carousel";
 import Badge from "../components/badge";
 import BadgeCollaborator from "../components/badge-collaborator";
 import VideoPlayer from "../components/video-player";
@@ -37,6 +38,24 @@ function getId(param) {
   }
 }
 
+function highlight(title) {
+  let result = "";
+  const titleSpliced = title.split(" ");
+
+  if (titleSpliced.length !== 1) {
+    for (let index = 0; index < titleSpliced.length; index++) {
+      if (index % 2 === 1) {
+        result += `<span className="text-blue-600">${titleSpliced[index]}</span> `;
+      } else {
+        result += titleSpliced[index] + " ";
+      }
+    }
+    return result;
+  }
+
+  return title;
+}
+
 function ComingSoon() {
   const [isDarkMode, background] = useOutletContext();
   const [result, setPost] = React.useState(null);
@@ -60,7 +79,7 @@ function ComingSoon() {
           <div className="px-4 sm:px-0 bg-white p-14 rounded-lg shadow-md mobile-mode">
             <a href={result.link} target="_blank" rel="noreferrer">
               <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-gray-900 mt-mobile -mt-2 mb-6 md:px-16 sm:px-0 capitalize">
-                {result.title}
+                {HTMLReactParser(highlight(result.title))}
               </h2>
             </a>
             {isVideoPlayer ? (
@@ -71,12 +90,12 @@ function ComingSoon() {
             <p className="text-md font-semibold leading-6 text-gray-900 ms-0 md:-ms-4 lg:-ms-4 md:px-20 sm:px-0">
               Description:
             </p>
-            <p className="text-sm leading-6 text-gray-900 ms-0 md:-ms-4 lg:-ms-4 md:px-20 sm:px-0">
+            <p className="text-sm leading-6 text-gray-900 ms-0 md:-ms-4 lg:-ms-4 md:px-20 sm:px-0" key="desc12">
               {result.description}
             </p>
             <div className="flex flex-wrap gap-2 my-3 md:px-16">
               {result.badge.map((item) => (
-                <Badge text={item} />
+                <Badge key={item} text={item} />
               ))}
             </div>
             <p className="text-md mt-6 font-semibold leading-6 text-gray-900 ms-0 md:-ms-4 lg:-ms-4 md:px-20 sm:px-0">
@@ -87,7 +106,7 @@ function ComingSoon() {
             </p>
             <div className="flex flex-wrap gap-2 mt-3 md:px-16">
               {result.collaborator.map((item) => (
-                <BadgeCollaborator text={item.value} url={item.url} />
+                <BadgeCollaborator key={item} text={item.value} url={item.url} />
               ))}
             </div>
           </div>

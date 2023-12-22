@@ -17,7 +17,7 @@ const navigation = [
   { name: "About", href: "/about" },
   { name: "Project", href: "/project" },
   // { name: "Contact", href: "/contact" },
-  { name: "Coming Soon", href: "/soon" },
+  { name: "Hobby", href: "/soon" },
 ];
 
 let background = null;
@@ -83,7 +83,7 @@ function Navigation() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <Link name={item.name} href={item.href} />
+              <Link key={item.name} name={item.name} href={item.href} />
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -116,7 +116,7 @@ function Navigation() {
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
-                    <LinkMobile name={item.name} href={item.href} />
+                    <LinkMobile key={item.name} name={item.name} href={item.href} />
                   ))}
                   <div>
                     <DarkModeSwitch
