@@ -21,7 +21,9 @@ function About() {
       <div className="isolate px-6 lg:px-8">
         <div className="mx-auto max-w-2xl py-32 sm:py-48 md:py-32 lg:py-56">
           <div className="px-4 sm:px-0">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mt-mobile">About Me</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mt-mobile">
+              <span className="text-blue-600">About</span> Me
+            </h2>
             <div className="sm:columns-2 pt-6">
               <img className="inline-block pb-4 h-72 w-72 ring-0" src={profile} alt="" />
               <p className="max-w-2xl text-sm leading-6 text-gray-900 ms-0 md:-ms-4 lg:-ms-4">
@@ -41,7 +43,9 @@ function About() {
           </div>
 
           <hr className="h-px my-8 bg-gray-500 border-0"></hr>
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Work Experiences</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            Work <span className="text-blue-600">Experiences</span>
+          </h2>
           <ul
             aria-label="User feed"
             role="feed"
@@ -54,7 +58,9 @@ function About() {
           </ul>
 
           <hr className="h-px my-8 bg-gray-500 border-0"></hr>
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Education Level</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            <span className="text-blue-600">Educational</span> Level
+          </h2>
           <ul
             aria-label="User feed"
             role="feed"
@@ -67,7 +73,9 @@ function About() {
           </ul>
 
           <hr className="h-px my-8 bg-gray-500 border-0"></hr>
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Organizational Experiences</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            Organizational <span className="text-blue-600">Experiences</span>
+          </h2>
           <ul
             aria-label="User feed"
             role="feed"

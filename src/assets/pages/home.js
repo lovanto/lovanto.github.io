@@ -9,7 +9,9 @@ function Home() {
       <div className="isolate px-6 lg:px-8">
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Hi, I'm Lovanto</h1>
+            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+              Hi, I'm <span className="text-blue-600">Lovanto</span>
+            </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               I am Software Engineer and Web Development enthusiast currently a fresh graduate with honors from Telkom
               University, Indonesia.
