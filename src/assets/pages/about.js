@@ -35,10 +35,10 @@ function About() {
               </p>
             </div>
             <div className="flex justify-between items-end overflow-hidden mt-2 md:-mt-12 lg:-mt-12 w-48 md:ms-80 lg:ms-80">
-              <SosMedIcon link="/" source={linkedin} name="linkedin" />
-              <SosMedIcon link="/" source={github} name="github" />
-              <SosMedIcon link="/" source={gmail} name="gmail" />
-              <SosMedIcon link="/" source={whatsapp} name="whatsapp" />
+              <SosMedIcon link="https://www.linkedin.com/in/lovanto" source={linkedin} name="linkedin" />
+              <SosMedIcon link="https://github.com/lovanto" source={github} name="github" />
+              <SosMedIcon link="mailto:rifkylovanto@gmail.com" source={gmail} name="gmail" />
+              <SosMedIcon link="https://api.whatsapp.com/send?phone=6287823837566" source={whatsapp} name="whatsapp" />
             </div>
           </div>
 
