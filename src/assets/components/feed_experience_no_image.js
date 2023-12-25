@@ -5,7 +5,7 @@ function FeedExperience2({ data }) {
         <div
           href="/"
           className="absolute z-10 inline-flex items-center justify-center w-8 h-8 text-white 
-          rounded-full -left-4 -top-3 ring-2 ring-white bg-gray-900"
+          rounded-full -left-4 -top-3 ring-2 ring-white bg-gray-900  shadow-md"
         ></div>
         <div className="ms-4 -mt-4">
           <h4

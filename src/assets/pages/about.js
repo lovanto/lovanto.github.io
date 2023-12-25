@@ -1,6 +1,5 @@
 import { useOutletContext } from "react-router-dom";
 
-import profile from "../images/file.enc";
 import github from "../images/github.svg";
 import linkedin from "../images/linkedin.svg";
 import gmail from "../images/email.svg";
@@ -25,7 +24,11 @@ function About() {
               <span className="text-blue-600">About</span> Me
             </h2>
             <div className="sm:columns-2 pt-6">
-              <img className="inline-block pb-4 h-72 w-72 ring-0" src={profile} alt="" />
+              <img
+                className="inline-block pb-4 h-72 w-72 ring-0"
+                src="https://media.licdn.com/dms/image/D5603AQEsnU4enGlsnA/profile-displayphoto-shrink_800_800/0/1703523413629?e=1709164800&v=beta&t=lUWUqqcm6Prryfesa-6ELe5f3AvZkISD0KAa5IUthoE"
+                alt=""
+              />
               <p className="max-w-2xl text-sm leading-6 text-gray-900 ms-0 md:-ms-4 lg:-ms-4">
                 I'm fresh graduate with honors from Telkom University with a bachelor's degree in computer software
                 engineering, where I also worked as a laboratory assistant at the informatics laboratory. In my most
@@ -34,7 +37,7 @@ function About() {
                 knowledge and skills in the field.
               </p>
             </div>
-            <div className="flex justify-between items-end overflow-hidden mt-2 md:-mt-12 lg:-mt-12 w-48 md:ms-80 lg:ms-80">
+            <div className="flex justify-between items-end overflow-hidden mt-2 md:-mt-14 lg:-mt-14 w-48 md:ms-80 lg:ms-80">
               <SosMedIcon link="https://www.linkedin.com/in/lovanto" source={linkedin} name="linkedin" />
               <SosMedIcon link="https://github.com/lovanto" source={github} name="github" />
               <SosMedIcon link="mailto:rifkylovanto@gmail.com" source={gmail} name="gmail" />

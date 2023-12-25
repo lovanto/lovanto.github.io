@@ -7,7 +7,7 @@ function FeedExperience({ data }) {
           className="absolute z-10 inline-flex items-center justify-center w-12 h-12 text-white 
           rounded-full -left-6 -top-3 ring-2 ring-white"
         >
-          <div className="bg-white rounded-full p-0.5">
+          <div className="bg-white rounded-full p-0.5 shadow-md">
             <img src={data.image} alt="company" className="max-w-full rounded-full" />
           </div>
         </div>
