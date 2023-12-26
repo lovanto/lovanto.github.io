@@ -14,6 +14,7 @@ const listOfId = [
   { id: "f4713235a861d0ce8d9c", name: "telyukost" },
   { id: "7bd993f87e5073c92c4c", name: "iflabbap" },
   { id: "a9a241577d1ece44bb45", name: "iflabtv" },
+  { id: "17f2b30a5a8170b84ffd", name: "ccia" },
   { id: "03b82b64a0486cfc73ef", name: "covid" },
   { id: "f7f16736ed2e466ac866", name: "oldportfolio" },
   { id: "d947d483a0db0315e95e", name: "aurora" },
