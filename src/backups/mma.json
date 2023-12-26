@@ -1,12 +1,12 @@
 {
-  "title": "Old Portfolio",
+  "title": "Money Management Apps",
   "media": [
-    "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/old_portfolio1.png",
-    "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/old_portfolio2.png"
+    "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/mma1.jpeg",
+    "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/mma2.jpeg"
   ],
-  "description": "This is my old website portfolio. It shows a little about me and my contacts. Also presented a little program that I made then show how much line is written in program, what language I use, and the size of program too.",
-  "badge": ["react.js", "sass"],
-  "link": "https://github.com/lovanto/old-portfolio",
+  "description": "MMA is an app for record your income and expense then this app will count it and showing how much many you have. After all if you want to convert it to excel, sure you can do it here.",
+  "badge": ["android", "java", "export to excel", "sqlite"],
+  "link": "https://github.com/lovanto/money-management-apps",
   "collaborator": [
     {
       "value": "Rifky Lovanto as Fullstack Developer",

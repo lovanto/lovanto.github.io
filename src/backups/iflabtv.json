@@ -1,9 +1,6 @@
 {
   "title": "BAP Website of Informatics Laboratory",
-  "media": [
-    "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/iflab-bap1.png",
-    "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/iflab-bap2.png"
-  ],
+  "media": ["https://github.com/lovanto/lovanto.github.io/raw/master/src/assets/project/iflab-tv2.mkv"],
   "description": "In the middle of his term as a laboratory assistant at Informatics Laboratory of Telkom University, IFLAB got problem to inform student about news, grade, and the other things. So the solution is making a TV program outside practicum room to make sure student watch it before student enter the room.",
   "badge": ["php", "html", "css", "bootstrap", "mysql"],
   "link": "https://github.com/iflab-telu/iflab-tv",
