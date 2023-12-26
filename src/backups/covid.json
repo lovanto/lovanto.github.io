@@ -1,9 +1,6 @@
 {
   "title": "Covid-19 Report Website",
-  "media": [
-    "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/covid1.png",
-    "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/covid1.png"
-  ],
+  "media": ["https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/covid1.png"],
   "description": "Website for inform how many people already confirmed, recovered, and deaths cause covid-19 outbreak. I got the covid-19 API from https://github.com/mathdroid/covid-19-api, then I use chart.js for showing data by chart bar and also I using Bootstrap for handle responsive of mobile phone.",
   "badge": ["javascript", "html", "css", "bootstrap", "mathdroid"],
   "link": "https://github.com/lovanto/covid-today",

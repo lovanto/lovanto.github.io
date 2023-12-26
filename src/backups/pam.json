@@ -6,6 +6,7 @@
   ],
   "description": "This project was created to handle and simplify the work carried out by employees at PT. Tirta Kencana Alam previously manually such as recording, calculation of costs, making water meter reports. Then we also added excel export to MySql to make it easier to migrate previous data. Made by Rifky Lovanto and Dani Hamdani.",
   "badge": ["php", "codeigniter", "html", "bootstrap", "css", "mysql"],
+  "link": "https://github.com/lovanto/pos_pam",
   "collaborator": [
     {
       "value": "Rifky Lovanto as Fullstack Developer",

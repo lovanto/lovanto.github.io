@@ -4,8 +4,18 @@
     "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/portfolio1.png",
     "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/portfolio2.png"
   ],
-  "description": "This is currently my website portfolio. It shows a little about me, experience, and my contacts. Also presented a little about program that I made in present.",
-  "badge": ["react.js", "tailwind css", "@material-tailwind", "axios", "local storage", "dark mode", "light mode"],
+  "description": "Currently this is my website portfolio. It shows a little about me, my experience and contacts. Also presented is a little about the program that I am currently making. This website has implemented light and dark modes which are stored in local storage and process api from the npoint.io",
+  "badge": [
+    "react.js",
+    "tailwind css",
+    "@material-tailwind",
+    "axios",
+    "local storage",
+    "dark mode",
+    "light mode",
+    "npoint.io"
+  ],
+  "link": "https://github.com/lovanto/lovanto.github.io",
   "collaborator": [
     {
       "value": "Rifky Lovanto as Fullstack Developer",

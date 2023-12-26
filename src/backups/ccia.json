@@ -1,0 +1,16 @@
+{
+  "title": "Covid Check-in Apps",
+  "media": [
+    "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/ccia1.png",
+    "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/ccia2.png"
+  ],
+  "description": "Covid Check-in Apps is a mobile application for checking in during the Covid 19 pandemic. This application is expected to be able to prevent and reduce the effects of its spread by recording visitors who come to an area and providing notifications if a visitor is infected with Covid so that others immediately isolate themselves. ",
+  "badge": ["flutter", "node.js", "qr code scanner", "mysql", "sqlite", "firebase notification"],
+  "link": "https://github.com/kuliyeah/covid-go-cek-in",
+  "collaborator": [
+    {
+      "value": "Rifky Lovanto as Fullstack Developer",
+      "url": "https://www.linkedin.com/in/lovanto/"
+    }
+  ]
+}

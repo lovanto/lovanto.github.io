@@ -28,6 +28,13 @@ const products = [
     imageAlt: "Project Logo",
   },
   {
+    name: "Covid Check-in Apps",
+    description: "Mobile apps for check-in before enter the building",
+    href: "/project/ccia",
+    imageSrc: "https://raw.githubusercontent.com/lovanto/portfolio/master/src/assets/project/ccia.png",
+    imageAlt: "Project Logo",
+  },
+  {
     name: "Covid-19 Report Website",
     description: "Showing covid-19 data by chart bar",
     href: "/project/covid",

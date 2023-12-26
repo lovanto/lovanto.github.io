@@ -6,7 +6,7 @@
   ],
   "description": "After become Assistant Laboratory at Informatics Laboratory of Telkom University, the first problem is input BAP always using Assistant Laboratory computer. The solution for this problem is this Apps, with this apps Assistant Practicum can input BAP with the other device. Notes: since 2022 until now still running on local network on Informatics Laboratory of Telkom University",
   "badge": ["php", "html", "css", "bootstrap", "mysql"],
-  "link": "",
+  "link": "https://github.com/iflab-telu/iflab-bap",
   "collaborator": [
     {
       "value": "Rifky Lovanto as Fullstack Developer",

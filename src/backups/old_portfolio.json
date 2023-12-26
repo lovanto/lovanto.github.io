@@ -6,6 +6,7 @@
   ],
   "description": "This is my old website portfolio. It shows a little about me and my contacts. Also presented a little program that I made then show how much line is written in program, what language I use, and the size of program too.",
   "badge": ["react.js", "sass"],
+  "link": "https://github.com/lovanto/old-portfolio",
   "collaborator": [
     {
       "value": "Rifky Lovanto as Fullstack Developer",
