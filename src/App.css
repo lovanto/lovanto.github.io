@@ -17,6 +17,11 @@
   transition: 1s;
 }
 
+.true .border-mode {
+  stroke-width: 3;
+  stroke: #ea580c;
+}
+
 .true .bg-white {
   background-color: #181818 !important;
 }
@@ -61,6 +66,11 @@
 /* LIGHT MODE ON */
 .false {
   transition: 1s;
+}
+
+.false .border-mode {
+  stroke-width: 3;
+  stroke: rgb(30 136 229);
 }
 
 .false .logo-rotate {

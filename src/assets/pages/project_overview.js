@@ -83,11 +83,7 @@ function ComingSoon() {
                 {HTMLReactParser(highlight(result.title))}
               </h2>
             </a>
-            {isVideoPlayer ? (
-              <VideoPlayer src={result.media[0]} />
-            ) : (
-              <CarouselDefault image1={result.media[0]} image2={result.media[1]} />
-            )}
+            {isVideoPlayer ? <VideoPlayer src={result.media[0]} /> : <CarouselDefault media={result.media} />}
             <p className="text-md font-semibold leading-6 text-gray-900 ms-0 md:-ms-4 lg:-ms-4 md:px-20 sm:px-0">
               Description:
             </p>

@@ -1,6 +1,6 @@
 import { Carousel, IconButton } from "@material-tailwind/react";
 
-function CarouselDefault({ image1, image2 }) {
+function CarouselDefault({ media }) {
   return (
     <Carousel
       className="rounded-lg md:ms-16 sm:ms-0 mb-4 shadow-md w-carousel"
@@ -12,14 +12,7 @@ function CarouselDefault({ image1, image2 }) {
           onClick={handlePrev}
           className="!absolute top-2/4 left-4 -translate-y-2/4 rounded-full"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2}
-            stroke="black"
-            className="h-6 w-6"
-          >
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="h-6 w-6 border-mode">
             <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
           </svg>
         </IconButton>
@@ -32,14 +25,7 @@ function CarouselDefault({ image1, image2 }) {
           onClick={handleNext}
           className="!absolute top-2/4 !right-4 -translate-y-2/4 rounded-full"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2}
-            stroke="black"
-            className="h-6 w-6"
-          >
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="h-6 w-6 border-mode">
             <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
           </svg>
         </IconButton>
@@ -50,7 +36,7 @@ function CarouselDefault({ image1, image2 }) {
             <span
               key={i}
               className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
-                activeIndex === i ? "w-8 bg-black" : "w-4 bg-gray-500"
+                activeIndex === i ? "w-8 bg-blue-600" : "w-4 bg-gray-600"
               }`}
               onClick={() => setActiveIndex(i)}
             />
@@ -58,8 +44,9 @@ function CarouselDefault({ image1, image2 }) {
         </div>
       )}
     >
-      <img src={image1} alt="1" className="h-full w-full object-cover" />
-      <img src={image2} alt="2" className="h-full w-full object-cover" />
+      {media.map((items, index) => (
+        <img src={items} alt={index} key={"media" + index} className="h-full w-full object-cover" />
+      ))}
     </Carousel>
   );
 }
