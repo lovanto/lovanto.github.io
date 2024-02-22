@@ -17,7 +17,7 @@ const navigation = [
   { name: "About", href: "/about" },
   { name: "Project", href: "/project" },
   // { name: "Contact", href: "/contact" },
-  { name: "Hobby", href: "/soon" },
+  { name: "Coming Soon", href: "/soon" },
 ];
 
 let background = null;
