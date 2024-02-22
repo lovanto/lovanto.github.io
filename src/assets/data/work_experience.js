@@ -4,7 +4,7 @@ const workExperienceData = [
       "https://media.licdn.com/dms/image/D560BAQG_vLwgShbYHg/company-logo_200_200/0/1708481964044/pt_altimeda_cipta_visitama_logo?e=1716422400&v=beta&t=Xf5JaHdA0y6W3dwGDIqgoRFt0X4_9bf5hAs22DoSW2I",
     company: "PT. Altimeda Cipta Visitama",
     date: "Jan 2024 - Present",
-    status: "Backend Developer (Internship)",
+    status: "Backend Developer (Contract)",
     description: `Developed a Restful API using OpenAI, Node.js, the HNSW algorithm, and PostgreSQL to create 
     a Generative AI system. This involved utilizing OpenAI capabilities for natural language processing, implementing 
     the HNSW algorithm for efficient similarity search using vector data, and leveraging Node.js for backend development 

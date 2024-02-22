@@ -4,8 +4,8 @@ function FeedExperience2({ data }) {
       <div className="flex flex-col flex-1 gap-1">
         <div
           href="/"
-          className="absolute z-10 inline-flex items-center justify-center w-8 h-8 text-white 
-          rounded-full -left-4 -top-3 ring-2 ring-white bg-gray-900  shadow-md"
+          className="absolute z-10 inline-flex items-center justify-center w-4 h-4 text-white 
+          rounded-full -left-2 -top-3 ring-2 ring-white bg-gray-900  shadow-md"
         ></div>
         <div className="ms-4 -mt-4">
           <h4
