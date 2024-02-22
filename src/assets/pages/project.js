@@ -17,11 +17,11 @@ function Project() {
                 </div>
                 <h3 className="mt-6 text-base font-semibold text-gray-900">
                   <a href={items.href}>
-                    <span className="absolute inset-0" />
+                    <span className="absolute inset-0 capitalize" />
                     {items.name}
                   </a>
                 </h3>
-                <p className="text-sm text-gray-600 mb-6">{items.description}</p>
+                <p className="text-sm text-gray-600 mb-6 capitalize">{items.description}</p>
               </div>
             ))}
           </div>
