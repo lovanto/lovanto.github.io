@@ -26,7 +26,7 @@ function About() {
             <div className="sm:columns-2 pt-6">
               <img
                 className="inline-block pb-4 h-72 w-72 ring-0"
-                src="https://media.licdn.com/dms/image/D5603AQEsnU4enGlsnA/profile-displayphoto-shrink_800_800/0/1703523413629?e=1709164800&v=beta&t=lUWUqqcm6Prryfesa-6ELe5f3AvZkISD0KAa5IUthoE"
+                src="https://media.licdn.com/dms/image/D5603AQG90I12oUhE_g/profile-displayphoto-shrink_400_400/0/1706497510889?e=1714003200&v=beta&t=AsJsqWvDoL8lVZ5Lez28okXaOTMn-DGWC6Zt4P-JT-E"
                 alt=""
               />
               <p className="max-w-2xl text-sm leading-6 text-gray-900 ms-0 md:-ms-4 lg:-ms-4">
