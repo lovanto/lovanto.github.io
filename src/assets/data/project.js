@@ -7,6 +7,14 @@ const products = [
     imageAlt: "Project Logo",
   },
   {
+    name: "Projected Consulting",
+    description: "Company profile for projected consulting",
+    href: "/project/projected-consulting",
+    imageSrc:
+      "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/projected-consulting.png",
+    imageAlt: "Project Logo",
+  },
+  {
     name: "Portfolio",
     description: "Lovanto new website portfolio",
     href: "/project/portfolio",

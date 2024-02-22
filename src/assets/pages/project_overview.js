@@ -22,6 +22,7 @@ const listOfId = [
   // { id: "c68e57f3f69538027cde", name: "cashier" },
   { id: "c8035edb18b8fbe1a311", name: "pam" },
   // { id: "c68e57f3f69538027cde", name: "waranti" },
+  { id: "3165f8a8f587976404d2", name: "projected-consulting" },
 ];
 
 function getId(param) {
