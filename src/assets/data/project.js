@@ -1,6 +1,6 @@
 const products = [
   {
-    name: "Projected AI",
+    name: "Projected - Generative AI",
     description: "AI enhances business productivity",
     href: "/project/projected-ai",
     imageSrc: "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/projected-ai.png",

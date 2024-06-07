@@ -13,8 +13,8 @@ function Home() {
               Hi, I'm <span className="text-blue-600">Lovanto</span>
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              I am Software Engineer and Web Development enthusiast currently working at PT. Altimeda Cipta Visitama as
-              a Backend Developer.
+              I'm Web Development and Artificial Intelligence enthusiast currently working at PT. Altimeda Cipta
+              Visitama to create Generative AI system.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a

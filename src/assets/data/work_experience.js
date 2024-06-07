@@ -1,19 +1,20 @@
 const workExperienceData = [
   {
     image:
-      "https://media.licdn.com/dms/image/D560BAQG_vLwgShbYHg/company-logo_200_200/0/1708481964044/pt_altimeda_cipta_visitama_logo?e=1716422400&v=beta&t=Xf5JaHdA0y6W3dwGDIqgoRFt0X4_9bf5hAs22DoSW2I",
+      "https://media.licdn.com/dms/image/D560BAQG_vLwgShbYHg/company-logo_100_100/0/1708481964044/pt_altimeda_cipta_visitama_logo?e=1726099200&v=beta&t=MLzUELW7C7WMh6v8JBhGJ1xWq1gMt7CWQh2v6_9DEIQ",
     company: "PT. Altimeda Cipta Visitama",
     date: "Jan 2024 - Present",
     status: "Backend Developer (Contract)",
-    description: `Developed a Restful API using OpenAI, Node.js, the HNSW algorithm, and PostgreSQL to create 
-    a Generative AI system. This involved utilizing OpenAI capabilities for natural language processing, implementing 
-    the HNSW algorithm for efficient similarity search using vector data, and leveraging Node.js for backend development 
-    along with PostgreSQL for data storage. The end result is a robust Generative AI system that can generate content based 
-    on uploaded documents and user preferences.`,
+    description: `Developed Restful API using AI, Node.js, and HNSW algorithm to create a Generative AI system 
+    that can connect with users' One Drive, Google Drive, and Amazon S3. In addition, the system also connects 
+    to the user's outlook to create a shared agenda with coworkers. This involved utilizing OpenAI's capabilities 
+    for natural language processing, implementing the HNSW algorithm for efficient similarity search using vector data, 
+    and leveraging Node.js for backend development. The end result is a robust Generative AI system that can 
+    generate content based on uploaded documents and user preferences.`,
   },
   {
     image:
-      "https://media.licdn.com/dms/image/C4D0BAQGVLh28SyAv-g/company-logo_200_200/0/1631315215307?e=1710979200&v=beta&t=QVJwRZAmB0FXfsJsSOBTiWxB_z69q64FOmYmQP2wqQ4",
+      "https://media.licdn.com/dms/image/C4D0BAQGVLh28SyAv-g/company-logo_100_100/0/1631315215307?e=1726099200&v=beta&t=Ws1YAlqzQlOgE9F-VzRJRk0F0TZiH8Nf_SSvaOLnwjs",
     company: "PT.Telkom Indonesia",
     date: "Feb 2023 - Jul 2023 · 6 mos",
     status: "Backend Developer (Internship)",
@@ -24,7 +25,7 @@ const workExperienceData = [
   },
   {
     image:
-      "https://media.licdn.com/dms/image/D560BAQGeTLdJxzmDTg/company-logo_100_100/0/1691326823008/telyukost_logo?e=1710979200&v=beta&t=hTu6MP2udbRvTd6dc5D4Ut_CKdUZx-j7U9LCSRTG8XQ",
+      "https://media.licdn.com/dms/image/D560BAQGeTLdJxzmDTg/company-logo_100_100/0/1691326823008/telyukost_logo?e=1726099200&v=beta&t=qkEySoHCIYpfb1lXTSU5PirW3zQerAnpPv6waRfnavA",
     company: "Telyukost.com",
     date: "Feb 2023 - Jul 2023 · 6 mos",
     status: "Software Engineering (Self Employee)",
@@ -35,7 +36,7 @@ const workExperienceData = [
   },
   {
     image:
-      "https://media.licdn.com/dms/image/C560BAQFQOFPVldcc7Q/company-logo_200_200/0/1645434306159?e=1710979200&v=beta&t=4PgGO0cH97omkE2S1LovKhTXuMm7MbG3LMCzo60tOIk",
+      "https://media.licdn.com/dms/image/C560BAQFQOFPVldcc7Q/company-logo_100_100/0/1645434306159?e=1726099200&v=beta&t=Q1zjFBQLA6wx0HoQKKAXCxZ8XWG4mUWEWUU1kIGuyCs",
     company: "Informatics Laboratory Telkom University",
     date: "Aug 2022 - Jul 2023 · 1 yrs",
     status: "Laboratory Assistant",
@@ -46,7 +47,7 @@ const workExperienceData = [
   },
   {
     image:
-      "https://media.licdn.com/dms/image/C4D0BAQETCWZFqzrqDg/company-logo_200_200/0/1630490878036?e=1710979200&v=beta&t=n1GR0oxOowa73aJHjlhN-Un6y04egMcxf85z4bdb_No",
+      "https://media.licdn.com/dms/image/C4D0BAQETCWZFqzrqDg/company-logo_100_100/0/1630490878036?e=1726099200&v=beta&t=E-gyGqqybnseVqKAvvoC92G-ZV4nypWJKBRTBrSjlYQ",
     company: "Antrique",
     date: "July 2022 - Aug 2022 · 2 mos",
     status: "Backend Developer (Internship)",
@@ -56,7 +57,7 @@ const workExperienceData = [
   },
   {
     image:
-      "https://media.licdn.com/dms/image/C4D0BAQGVLh28SyAv-g/company-logo_200_200/0/1631315215307?e=1710979200&v=beta&t=QVJwRZAmB0FXfsJsSOBTiWxB_z69q64FOmYmQP2wqQ4",
+      "https://media.licdn.com/dms/image/C4D0BAQGVLh28SyAv-g/company-logo_100_100/0/1631315215307?e=1726099200&v=beta&t=Ws1YAlqzQlOgE9F-VzRJRk0F0TZiH8Nf_SSvaOLnwjs",
     company: "PT.Telkom Indonesia",
     date: "Feb 2022 - Jan 2023 · 1 yrs",
     status: "Software Engineering (Apprenticeship)",
@@ -65,7 +66,7 @@ const workExperienceData = [
   },
   {
     image:
-      "https://media.licdn.com/dms/image/C560BAQFQOFPVldcc7Q/company-logo_200_200/0/1645434306159?e=1710979200&v=beta&t=4PgGO0cH97omkE2S1LovKhTXuMm7MbG3LMCzo60tOIk",
+      "https://media.licdn.com/dms/image/C560BAQFQOFPVldcc7Q/company-logo_100_100/0/1645434306159?e=1726099200&v=beta&t=Q1zjFBQLA6wx0HoQKKAXCxZ8XWG4mUWEWUU1kIGuyCs",
     company: "Informatics Laboratory Telkom University",
     date: "Aug 2021 - Jun 2023 · 22 mos",
     status: "Practicum Assistant",

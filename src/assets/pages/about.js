@@ -24,17 +24,13 @@ function About() {
               <span className="text-blue-600">About</span> Me
             </h2>
             <div className="sm:columns-2 pt-6">
-              <img
-                className="inline-block pb-4 h-72 w-72 ring-0"
-                src="https://media.licdn.com/dms/image/D5603AQG90I12oUhE_g/profile-displayphoto-shrink_400_400/0/1706497510889?e=1714003200&v=beta&t=AsJsqWvDoL8lVZ5Lez28okXaOTMn-DGWC6Zt4P-JT-E"
-                alt=""
-              />
+              <img className="inline-block pb-4 h-72 w-72 ring-0" src="https://i.ibb.co.com/qmkPXrw/Front.png" alt="" />
               <p className="max-w-2xl text-sm leading-6 text-gray-900 ms-0 md:-ms-4 lg:-ms-4">
-                I'm fresh graduate with honors from Telkom University with a bachelor's degree in computer software
-                engineering, where I also worked as a laboratory assistant at the informatics laboratory. In my most
-                recent intern role, I contributed to creating a restful API using Node.js and Golang. My hobbies are
-                playing games especially on the testing stage, and reading comics, and I am always eager to expand my
-                knowledge and skills in the field.
+                I have a bachelor's degree in software engineering from Telkom University, where I also worked as a
+                laboratory assistant. As a backend developer, I've gained valuable experience contributing to RESTful
+                APIs using Node.js, Golang, and AI/ML technologies at companies like PT. Altimeda Cipta Visitama and PT.
+                Telkom Indonesia. Additionally, I've been actively involved in various organizations including Proclub,
+                the Informatics Laboratory, and BITCOM.
               </p>
             </div>
             <div className="flex justify-between items-end overflow-hidden mt-2 md:-mt-14 lg:-mt-14 w-48 md:ms-80 lg:ms-80">
