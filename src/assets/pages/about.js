@@ -12,8 +12,21 @@ import experienceData from "../data/work_experience";
 import educationData from "../data/educational_experience";
 import organizationalData from "../data/organizational_experience";
 
+// Group experiences by company
+function groupByCompany(data) {
+  return data.reduce((acc, current) => {
+    const { company } = current;
+    if (!acc[company]) {
+      acc[company] = [];
+    }
+    acc[company].push(current);
+    return acc;
+  }, {});
+}
+
 function About() {
   const [isDarkMode, background] = useOutletContext();
+  const groupedExperienceData = groupByCompany(experienceData);
 
   return (
     <div className={`flex items-center justify-center -mt-24 ${isDarkMode}`}>
@@ -24,7 +37,11 @@ function About() {
               <span className="text-blue-600">About</span> Me
             </h2>
             <div className="sm:columns-2 pt-6">
-              <img className="inline-block pb-4 h-72 w-72 ring-0" src="https://i.ibb.co.com/qmkPXrw/Front.png" alt="" />
+              <img
+                className="inline-block pb-4 h-72 w-72 ring-0"
+                src="https://i.ibb.co.com/QQKrp6s/1728640906974.jpg"
+                alt=""
+              />
               <p className="max-w-2xl text-sm leading-6 text-gray-900 ms-0 md:-ms-4 lg:-ms-4">
                 I have a bachelor's degree in software engineering from Telkom University, where I also worked as a
                 laboratory assistant. As a backend developer, I've gained valuable experience contributing to RESTful
@@ -51,8 +68,8 @@ function About() {
             className="relative flex flex-col gap-12 py-12 pl-8 after:border-dashed 
             after:absolute after:top-6 after:bottom-6 after:border after:border-gray-500"
           >
-            {experienceData.map((item, index) => (
-              <FeedExperience data={item} key={item.company + index} />
+            {Object.entries(groupedExperienceData).map(([company, experiences]) => (
+              <FeedExperience data={experiences} key={company} />
             ))}
           </ul>
 
