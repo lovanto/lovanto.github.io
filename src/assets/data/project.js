@@ -1,5 +1,13 @@
 const products = [
   {
+    name: "WABi - Integration with Business Central",
+    description: "Enabling smooth data flow and enhanced collaboration across platforms",
+    href: "/project/wabi-integration",
+    imageSrc:
+      "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/wabi-integration.png",
+    imageAlt: "Project Logo",
+  },
+  {
     name: "Projected - Generative AI",
     description: "AI enhances business productivity",
     href: "/project/projected-ai",
