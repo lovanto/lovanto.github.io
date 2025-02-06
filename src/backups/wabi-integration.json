@@ -3,8 +3,7 @@
   "media": [
     "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/wabi-integration1.png",
     "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/wabi-integration2.png",
-    "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/wabi-integration3.png",
-    "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/wabi-integration4.png"
+    "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/wabi-integration3.png"
   ],
   "description": "WABi seamlessly integrates with Business Central, enabling smooth data flow and enhanced collaboration across platforms, including Dynamics 365 and Buildxact, to streamline operations and improve efficiency.",
   "badge": ["node.js", "postgresql", "express", "cron-scheduler", "buildxact", "business central", "dynamics 365"],
