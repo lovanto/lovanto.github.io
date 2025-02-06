@@ -1,5 +1,13 @@
 const products = [
   {
+    name: "Adenco - Enterprise System",
+    description: "Establishing a centralized data warehouse",
+    href: "/project/adenco-enterprise-system",
+    imageSrc:
+      "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/adenco-enterprise-system.png",
+    imageAlt: "Project Logo",
+  },
+  {
     name: "WABi - Integration with Business Central",
     description: "Enabling smooth data flow and enhanced collaboration across platforms",
     href: "/project/wabi-integration",
