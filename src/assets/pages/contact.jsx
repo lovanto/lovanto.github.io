@@ -14,7 +14,7 @@ function Contact() {
 
   useEffect(() => {
     (function () {
-      emailjs.init("YOUR_PUBLIC_KEY");
+      emailjs.init("BvKb-DqK-R2-kV6M5");
     })();
   }, []);
 
@@ -31,7 +31,7 @@ function Contact() {
     setSubmitStatus("");
 
     try {
-      await window.emailjs.send("service_7x8k9m8", "template_8h2n3l9", {
+      await window.emailjs.send("compro", "template_xww8tra", {
         from_name: `${formData.firstName} ${formData.lastName}`,
         to_email: "rifkylovanto@gmail.com",
         from_email: formData.email,
