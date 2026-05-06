@@ -78,9 +78,9 @@ function ComingSoon() {
   if (!result) return null;
 
   return (
-    <div className={`flex items-center justify-center -mt-24 ${isDarkMode}`}>
-      <div className="isolate px-6 md:pt-20 lg:px-8">
-        <div className="mx-auto max-w-5xl py-32 sm:py-48 lg:py-56 -mt-6 sm:w-full">
+    <div className={`min-h-screen flex flex-col ${isDarkMode}`}>
+      <div className="flex-1 flex items-start justify-center px-6 lg:px-8 pt-32 relative z-10">
+        <div className="mx-auto max-w-5xl sm:w-full">
           <div className="px-4 sm:px-0 bg-white p-14 rounded-lg shadow-md mobile-mode">
             <a href={result.link} target="_blank" rel="noreferrer">
               <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-gray-900 mt-mobile -mt-2 mb-6 md:px-16 sm:px-0 capitalize">
@@ -112,8 +112,8 @@ function ComingSoon() {
             </div>
           </div>
         </div>
-        {background}
       </div>
+      {background}
     </div>
   );
 }

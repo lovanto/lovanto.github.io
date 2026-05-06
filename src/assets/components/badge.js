@@ -1,7 +1,7 @@
-import { Chip } from "@material-tailwind/react";
-
 function Badge({ text }) {
-  return <Chip color="blue" value={text} className="bg-blue-100 text-blue-600" size="sm" />;
+  return (
+    <span className="inline-block px-3 py-1 text-sm font-semibold text-blue-600 bg-blue-100 rounded-full">{text}</span>
+  );
 }
 
 export default Badge;

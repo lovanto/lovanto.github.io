@@ -1,9 +1,9 @@
-import { Chip } from "@material-tailwind/react";
-
 function BadgeCollaborator({ text, url }) {
   return (
-    <a href={url} target="_blank" rel="noreferrer">
-      <Chip variant="ghost" value={text} className="bg-gray-100 text-gray-800 normal-case" />
+    <a href={url} target="_blank" rel="noreferrer" className="inline-block">
+      <span className="inline-block px-3 py-1 text-sm font-semibold text-gray-800 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors normal-case">
+        {text}
+      </span>
     </a>
   );
 }

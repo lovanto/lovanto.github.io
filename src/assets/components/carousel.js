@@ -1,53 +1,62 @@
-import { Carousel, IconButton } from "@material-tailwind/react";
+import { useState } from "react";
 
 function CarouselDefault({ media }) {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const goToPrevious = () => {
+    const isFirstSlide = currentIndex === 0;
+    const newIndex = isFirstSlide ? media.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
+  };
+
+  const goToNext = () => {
+    const isLastSlide = currentIndex === media.length - 1;
+    const newIndex = isLastSlide ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+  };
+
+  const goToSlide = (index) => {
+    setCurrentIndex(index);
+  };
+
   return (
-    <Carousel
-      className="rounded-lg md:ms-16 sm:ms-0 mb-4 shadow-md w-carousel"
-      prevArrow={({ handlePrev }) => (
-        <IconButton
-          variant="text"
-          color="white"
-          size="lg"
-          onClick={handlePrev}
-          className="!absolute top-2/4 left-4 -translate-y-2/4 rounded-full"
+    <div className="relative rounded-lg md:ms-16 sm:ms-0 mb-4 shadow-md w-carousel">
+      <div className="relative h-96 overflow-hidden rounded-lg">
+        <img src={media[currentIndex]} alt={`Slide ${currentIndex}`} className="h-full w-full object-cover" />
+
+        {/* Navigation Arrows */}
+        <button
+          onClick={goToPrevious}
+          className="absolute top-1/2 left-4 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full p-2 shadow-lg transition-colors"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="h-6 w-6 border-mode">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="h-6 w-6">
             <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
           </svg>
-        </IconButton>
-      )}
-      nextArrow={({ handleNext }) => (
-        <IconButton
-          variant="text"
-          color="white"
-          size="lg"
-          onClick={handleNext}
-          className="!absolute top-2/4 !right-4 -translate-y-2/4 rounded-full"
+        </button>
+
+        <button
+          onClick={goToNext}
+          className="absolute top-1/2 right-4 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full p-2 shadow-lg transition-colors"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="h-6 w-6 border-mode">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="h-6 w-6">
             <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
           </svg>
-        </IconButton>
-      )}
-      navigation={({ setActiveIndex, activeIndex, length }) => (
-        <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
-          {new Array(length).fill("").map((_, i) => (
-            <span
-              key={i}
-              className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
-                activeIndex === i ? "w-8 bg-blue-600" : "w-4 bg-gray-600"
+        </button>
+
+        {/* Navigation Dots */}
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+          {media.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => goToSlide(index)}
+              className={`h-1 rounded-full transition-all ${
+                currentIndex === index ? "w-8 bg-blue-600" : "w-4 bg-gray-600"
               }`}
-              onClick={() => setActiveIndex(i)}
             />
           ))}
         </div>
-      )}
-    >
-      {media.map((items, index) => (
-        <img src={items} alt={index} key={"media" + index} className="h-full w-full object-cover" />
-      ))}
-    </Carousel>
+      </div>
+    </div>
   );
 }
 

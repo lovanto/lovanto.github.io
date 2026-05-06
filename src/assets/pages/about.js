@@ -29,7 +29,7 @@ function About() {
   const groupedExperienceData = groupByCompany(experienceData);
 
   return (
-    <div className={`flex items-center justify-center -mt-24 ${isDarkMode}`}>
+    <div className={`flex items-center justify-center -mt-24 min-h-screen ${isDarkMode}`}>
       <div className="isolate px-6 lg:px-8">
         <div className="mx-auto max-w-2xl py-32 sm:py-48 md:py-32 lg:py-56">
           <div className="px-4 sm:px-0">
