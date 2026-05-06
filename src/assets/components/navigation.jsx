@@ -3,12 +3,12 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon, SunIcon, MoonIcon } from "@heroicons/react/24/outline";
 import useLocalStorage from "use-local-storage";
 
-import Link from "./link";
-import LinkMobile from "./link_mobile";
+import Link from "./link.jsx";
+import LinkMobile from "./link_mobile.jsx";
 import logo from "../images/logo.svg";
 import { Outlet } from "react-router-dom";
-import OrangeShard from "./orange_shard";
-import BlueShard from "./blue_shard";
+import OrangeShard from "./orange_shard.jsx";
+import BlueShard from "./blue_shard.jsx";
 import Particle from "../components/particles";
 
 const navigation = [

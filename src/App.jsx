@@ -2,14 +2,14 @@ import "./App.css";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import Home from "./assets/pages/home";
-import About from "./assets/pages/about";
-import Project from "./assets/pages/project";
-import Contact from "./assets/pages/contact";
-import NotFound from "./assets/pages/not_found";
-import Navigation from "./assets/components/navigation";
-import ComingSoon from "./assets/pages/coming_soon";
-import ProjectOverview from "./assets/pages/project_overview";
+import Home from "./assets/pages/home.jsx";
+import About from "./assets/pages/about.jsx";
+import Project from "./assets/pages/project.jsx";
+import Contact from "./assets/pages/contact.jsx";
+import NotFound from "./assets/pages/not_found.jsx";
+import Navigation from "./assets/components/navigation.jsx";
+import ComingSoon from "./assets/pages/coming_soon.jsx";
+import ProjectOverview from "./assets/pages/project_overview.jsx";
 
 function App() {
   return (
