@@ -26,6 +26,10 @@
   background-color: #181818 !important;
 }
 
+.true .feed-logo-bg {
+  background-color: white !important;
+}
+
 .true .logo-rotate {
   transform: rotate(-180deg);
   transition: 1s;
@@ -48,7 +52,11 @@
 }
 
 .true .text-gray-600 {
-  color: #f3f4f6 !important;
+  color: #c1c6cf !important;
+}
+
+.true .text-gray-700 {
+  color: #c1c6cf !important;
 }
 
 .true .hover\:bg-gray-50:hover {

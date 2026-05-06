@@ -5,7 +5,7 @@ const path = window.location.pathname;
 function Link(item) {
   const isActive = path === item.href ? active : notActive;
   return (
-    <a key={item.name} href={item.href} className={isActive}>
+    <a key={item.name} href={item.href} className={`${isActive} hover:bg-transparent`}>
       {item.name}
     </a>
   );

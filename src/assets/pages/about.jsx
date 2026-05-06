@@ -36,25 +36,36 @@ function About() {
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mt-mobile">
               <span className="text-blue-600">About</span> Me
             </h2>
-            <div className="sm:columns-2 pt-6">
-              <img
-                className="inline-block pb-4 h-72 w-72 ring-0"
-                src="https://i.ibb.co.com/QQKrp6s/1728640906974.jpg"
-                alt=""
-              />
-              <p className="max-w-2xl text-sm leading-6 text-gray-900 ms-0 md:-ms-4 lg:-ms-4">
-                I have a bachelor's degree in software engineering from Telkom University, where I also worked as a
-                laboratory assistant. As a backend developer, I've gained valuable experience contributing to RESTful
-                APIs using Node.js, Golang, and AI/ML technologies at companies like PT. Altimeda Cipta Visitama and PT.
-                Telkom Indonesia. Additionally, I've been actively involved in various organizations including Proclub,
-                the Informatics Laboratory, and BITCOM.
-              </p>
-            </div>
-            <div className="flex justify-between items-end overflow-hidden mt-2 md:-mt-14 lg:-mt-14 w-48 md:ms-80 lg:ms-80">
-              <SosMedIcon link="https://www.linkedin.com/in/lovanto" source={linkedin} name="linkedin" />
-              <SosMedIcon link="https://github.com/lovanto" source={github} name="github" />
-              <SosMedIcon link="mailto:rifkylovanto@gmail.com" source={gmail} name="gmail" />
-              <SosMedIcon link="https://api.whatsapp.com/send?phone=6287823837566" source={whatsapp} name="whatsapp" />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-6">
+              <div className="flex justify-center md:justify-start items-center">
+                <img
+                  className="h-full w-72 ring-0 object-cover"
+                  src="https://i.ibb.co.com/QQKrp6s/1728640906974.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <p className="text-sm leading-6 text-gray-900">
+                  I am a passionate Software Engineer, DevOps Engineer, AI, and Cyber Security enthusiast currently
+                  working at PT. Altimeda Cipta Visitama and Founder of Hompimpa. I specialize in building scalable
+                  backend systems, RESTful APIs, and cloud-based applications using Golang, Node.js, NestJS, and
+                  Next.js.
+                  <br />
+                  <br />I also have experience in DevOps practices such as CI/CD, Docker, server management, and cloud
+                  deployment, along with developing AI-powered solutions integrated with OpenAI technologies and vector
+                  search systems.
+                </p>
+                <div className="flex justify-start items-center gap-4 mt-6">
+                  <SosMedIcon link="https://www.linkedin.com/in/lovanto" source={linkedin} name="linkedin" />
+                  <SosMedIcon link="https://github.com/lovanto" source={github} name="github" />
+                  <SosMedIcon link="mailto:rifkylovanto@gmail.com" source={gmail} name="gmail" />
+                  <SosMedIcon
+                    link="https://api.whatsapp.com/send?phone=6287823837566"
+                    source={whatsapp}
+                    name="whatsapp"
+                  />
+                </div>
+              </div>
             </div>
           </div>
 

@@ -1,5 +1,5 @@
-const active = "-mx-3 block rounded-lg px-3 py-2 text-base font-bold leading-7 text-gray-900 hover:bg-gray-50";
-const notActive = "-mx-3 block rounded-lg px-3 py-2 text-base font-normal leading-7 text-gray-900 hover:bg-gray-50";
+const active = "-mx-3 block rounded-lg px-3 py-2 text-base font-bold leading-7 text-gray-900";
+const notActive = "-mx-3 block rounded-lg px-3 py-2 text-base font-normal leading-7 text-gray-900";
 const path = window.location.pathname;
 
 function LinkMobile(item) {

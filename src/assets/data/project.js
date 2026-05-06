@@ -9,7 +9,7 @@ const products = [
   {
     name: "Moeda Pos Apps",
     description:
-      "Point of Sale (POS) application designed to streamline transactions, inventory management, and business operations for retail and food service businesses.",
+      "Modern POS system for handling transactions, inventory tracking, sales reporting, and daily business operations efficiently.",
     href: "/project/moeda",
     imageSrc: "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/soon.png",
     imageAlt: "Moeda",

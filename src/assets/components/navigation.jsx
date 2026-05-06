@@ -82,19 +82,26 @@ function Navigation() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <Link key={item.name} name={item.name} href={item.href} />
+              <div
+                key={item.name}
+                className={`px-4 py-2 rounded-lg transition-all duration-200 ${isDarkMode ? "hover:bg-gray-800" : "hover:bg-transparent"}`}
+              >
+                <Link name={item.name} href={item.href} />
+              </div>
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <div>
-              <button
-                onClick={toggleTheme}
-                className="p-2 rounded-lg text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700"
-                aria-label="Toggle dark mode"
-              >
-                {isDarkMode ? <SunIcon className="h-6 w-6" /> : <MoonIcon className="h-6 w-6" />}
-              </button>
-            </div>
+            <button
+              onClick={toggleTheme}
+              className={`p-2 rounded-lg transition-all duration-200 ${isDarkMode ? "hover:bg-gray-800" : ""}`}
+              aria-label="Toggle dark mode"
+            >
+              {isDarkMode ? (
+                <SunIcon className="h-6 w-6 text-gray-300 hover:text-white" />
+              ) : (
+                <MoonIcon className="h-6 w-6 text-gray-700 hover:text-black" />
+              )}
+            </button>
           </div>
         </nav>
         <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
@@ -105,8 +112,7 @@ function Navigation() {
           >
             <div className="flex items-center justify-between">
               <a href="/" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
-                <img className="h-8 w-auto logo-rotate" src={logo} alt="" />
+                {/* <img className="h-8 w-auto logo-rotate" src={logo} alt="" /> */}
               </a>
               <button
                 type="button"
@@ -117,21 +123,32 @@ function Navigation() {
                 <XMarkIcon className="h-6 w-6" aria-hidden="true" />
               </button>
             </div>
-            <div className="mt-6 flow-root">
-              <div className="-my-6 divide-y divide-gray-500/10">
+            <div className="mt-6 flex flex-col h-full">
+              <div className="-my-6 divide-y divide-gray-500/10 flex-1">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
-                    <LinkMobile key={item.name} name={item.name} href={item.href} />
-                  ))}
-                  <div>
-                    <button
-                      onClick={toggleTheme}
-                      className="p-2 rounded-lg text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700"
-                      aria-label="Toggle dark mode"
+                    <div
+                      key={item.name}
+                      className={`px-4 py-2 rounded-lg transition-all duration-200 ${isDarkMode ? "hover:bg-gray-800" : "hover:bg-transparent"}`}
                     >
-                      {isDarkMode ? <SunIcon className="h-6 w-6" /> : <MoonIcon className="h-6 w-6" />}
-                    </button>
-                  </div>
+                      <LinkMobile name={item.name} href={item.href} />
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="py-6 border-t border-gray-500/50 mt-auto">
+                <div className="flex justify-center">
+                  <button
+                    onClick={toggleTheme}
+                    className={`p-2 rounded-lg transition-all duration-200 ${isDarkMode ? "hover:bg-gray-800" : ""}`}
+                    aria-label="Toggle dark mode"
+                  >
+                    {isDarkMode ? (
+                      <SunIcon className="h-6 w-6 text-gray-300 hover:text-white" />
+                    ) : (
+                      <MoonIcon className="h-6 w-6 text-gray-700 hover:text-black" />
+                    )}
+                  </button>
                 </div>
               </div>
             </div>
