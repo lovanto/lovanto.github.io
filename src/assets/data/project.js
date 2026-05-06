@@ -4,8 +4,7 @@ const products = [
     description:
       "Enterprise digital transformation platform with centralized data warehouse and operational analytics.",
     href: "/project/wcc-system",
-    imageSrc:
-      "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/adenco-enterprise-system.png",
+    imageSrc: "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/wcc.png",
     imageAlt: "WCC Enterprise System",
   },
   {
