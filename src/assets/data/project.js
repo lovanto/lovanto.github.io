@@ -1,10 +1,25 @@
 const products = [
   {
-    name: "AI Marketing Operating System",
+    name: "AI Marketing Operating System(AIMOS)",
     description: "AI-powered marketing operating system built specifically for large enterprises.",
-    href: "/project/soon",
+    href: "/project/aimos",
     imageSrc: "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/soon.png",
     imageAlt: "AIMOS",
+  },
+  {
+    name: "Moeda Pos Apps",
+    description:
+      "Point of Sale (POS) application designed to streamline transactions, inventory management, and business operations for retail and food service businesses.",
+    href: "/project/moeda",
+    imageSrc: "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/soon.png",
+    imageAlt: "Moeda",
+  },
+  {
+    name: "Empatrima",
+    description: "Realtime quiz apps for educational and corporate training purposes.",
+    href: "/project/empatrima",
+    imageSrc: "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/soon.png",
+    imageAlt: "Empatrima",
   },
   {
     name: "WCC - Enterprise System",
