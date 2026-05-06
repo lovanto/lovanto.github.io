@@ -1,28 +1,80 @@
 import "./App.css";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import React, { Suspense } from "react";
 
-import Home from "./assets/pages/home";
-import About from "./assets/pages/about";
-import Project from "./assets/pages/project";
-import Contact from "./assets/pages/contact";
-import NotFound from "./assets/pages/not_found";
 import Navigation from "./assets/components/navigation";
-import ComingSoon from "./assets/pages/coming_soon";
-import ProjectOverview from "./assets/pages/project_overview";
+
+// Lazy load components
+const Home = React.lazy(() => import("./assets/pages/home"));
+const About = React.lazy(() => import("./assets/pages/about"));
+const Project = React.lazy(() => import("./assets/pages/project"));
+const Contact = React.lazy(() => import("./assets/pages/contact"));
+const NotFound = React.lazy(() => import("./assets/pages/not_found"));
+const ComingSoon = React.lazy(() => import("./assets/pages/coming_soon"));
+const ProjectOverview = React.lazy(() => import("./assets/pages/project_overview"));
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Navigation />}>
-          <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="project" element={<Project />} />
-          <Route path="project/:name" element={<ProjectOverview />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="soon" element={<ComingSoon />} />
-          <Route path="*" element={<NotFound />} />
+          <Route
+            index
+            element={
+              <Suspense fallback={<div>Loading...</div>}>
+                <Home />
+              </Suspense>
+            }
+          />
+          <Route
+            path="about"
+            element={
+              <Suspense fallback={<div>Loading...</div>}>
+                <About />
+              </Suspense>
+            }
+          />
+          <Route
+            path="project"
+            element={
+              <Suspense fallback={<div>Loading...</div>}>
+                <Project />
+              </Suspense>
+            }
+          />
+          <Route
+            path="project/:name"
+            element={
+              <Suspense fallback={<div>Loading...</div>}>
+                <ProjectOverview />
+              </Suspense>
+            }
+          />
+          <Route
+            path="contact"
+            element={
+              <Suspense fallback={<div>Loading...</div>}>
+                <Contact />
+              </Suspense>
+            }
+          />
+          <Route
+            path="soon"
+            element={
+              <Suspense fallback={<div>Loading...</div>}>
+                <ComingSoon />
+              </Suspense>
+            }
+          />
+          <Route
+            path="*"
+            element={
+              <Suspense fallback={<div>Loading...</div>}>
+                <NotFound />
+              </Suspense>
+            }
+          />
         </Route>
       </Routes>
     </BrowserRouter>
