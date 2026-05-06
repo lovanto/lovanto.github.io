@@ -81,7 +81,7 @@ function ComingSoon() {
     <div className={`min-h-screen flex flex-col ${isDarkMode}`}>
       <div className="flex-1 flex items-start justify-center px-6 lg:px-8 pt-32 relative z-10">
         <div className="mx-auto max-w-5xl sm:w-full">
-          <div className="px-4 sm:px-0 bg-white p-14 rounded-lg shadow-md mobile-mode">
+          <div className="px-4 sm:px-0 bg-white p-14 rounded-lg shadow-md mobile-mode mb-12">
             <a href={result.link} target="_blank" rel="noreferrer">
               <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-gray-900 mt-mobile -mt-2 mb-6 md:px-16 sm:px-0 capitalize">
                 {HTMLReactParser(highlight(result.title))}
@@ -112,7 +112,7 @@ function ComingSoon() {
             </p>
             <div className="flex flex-wrap gap-2 mt-3 md:px-16">
               {result.collaborator.map((item) => (
-                <BadgeCollaborator key={item} text={item.value} url={item.url} />
+                <BadgeCollaborator key={item.value} text={item.value} url={item.url} />
               ))}
             </div>
           </div>
