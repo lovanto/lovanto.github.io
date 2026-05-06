@@ -1,7 +1,7 @@
 import { useOutletContext } from "react-router-dom";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 
-import resume from "../rifky_lovanto-resume.pdf";
+import resume from "../Rifky Lovanto-resume.pdf";
 function Home() {
   const [isDarkMode, background] = useOutletContext();
   return (
@@ -13,8 +13,9 @@ function Home() {
               Hi, I'm <span className="text-blue-600">Lovanto</span>
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              I am a passionate Web Development and Artificial Intelligence enthusiast, currently employed at PT.
-              Altimeda Cipta Visitama, where I am actively involved in designing and developing Generative AI systems.
+              I am a passionate Software Development, Devops Engineer, AI and Cyber Security Enthusiast, currently
+              working as Software Engineer at Altimeda Cipta Visitama and Founder at Hompimpa. Main Tech Stack: Golang,
+              Node.js, NestJS, and Next.js.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a

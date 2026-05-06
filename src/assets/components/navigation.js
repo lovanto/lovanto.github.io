@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import { Dialog } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon, SunIcon, MoonIcon } from "@heroicons/react/24/outline";
 import useLocalStorage from "use-local-storage";
 
 import Link from "./link";
 import LinkMobile from "./link_mobile";
 import logo from "../images/logo.svg";
 import { Outlet } from "react-router-dom";
-import { DarkModeSwitch } from "react-toggle-dark-mode";
 import OrangeShard from "./orange_shard";
 import BlueShard from "./blue_shard";
 import Particle from "../components/particles";
@@ -88,7 +87,13 @@ function Navigation() {
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <div>
-              <DarkModeSwitch checked={isDarkMode} onChange={toggleTheme} size={30} />
+              <button
+                onClick={toggleTheme}
+                className="p-2 rounded-lg text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700"
+                aria-label="Toggle dark mode"
+              >
+                {isDarkMode ? <SunIcon className="h-6 w-6" /> : <MoonIcon className="h-6 w-6" />}
+              </button>
             </div>
           </div>
         </nav>
@@ -119,12 +124,13 @@ function Navigation() {
                     <LinkMobile key={item.name} name={item.name} href={item.href} />
                   ))}
                   <div>
-                    <DarkModeSwitch
-                      checked={isDarkMode}
-                      onChange={toggleTheme}
-                      size={30}
-                      className="sm:-mt-52 sm:ms-40 mobile-toggle"
-                    />
+                    <button
+                      onClick={toggleTheme}
+                      className="p-2 rounded-lg text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700"
+                      aria-label="Toggle dark mode"
+                    >
+                      {isDarkMode ? <SunIcon className="h-6 w-6" /> : <MoonIcon className="h-6 w-6" />}
+                    </button>
                   </div>
                 </div>
               </div>
