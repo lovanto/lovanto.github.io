@@ -92,7 +92,12 @@ function ComingSoon() {
               Description:
             </p>
             <p className="text-sm leading-6 text-gray-900 ms-0 md:-ms-4 lg:-ms-4 md:px-20 sm:px-0" key="desc12">
-              {result.description}
+              {result.description.split("\n").map((line, i) => (
+                <React.Fragment key={i}>
+                  {line}
+                  {i < result.description.split("\n").length - 1 && <br />}
+                </React.Fragment>
+              ))}
             </p>
             <div className="flex flex-wrap gap-2 my-3 md:px-16">
               {result.badge.map((item) => (
