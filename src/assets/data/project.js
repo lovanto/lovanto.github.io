@@ -1,5 +1,12 @@
 const products = [
   {
+    name: "AI Marketing Operating System",
+    description: "AI-powered marketing operating system built specifically for large enterprises.",
+    href: "/project/soon",
+    imageSrc: "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/soon.png",
+    imageAlt: "AIMOS",
+  },
+  {
     name: "WCC - Enterprise System",
     description:
       "Enterprise digital transformation platform with centralized data warehouse and operational analytics.",
