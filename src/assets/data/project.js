@@ -31,7 +31,7 @@ const products = [
     name: "Empatrima",
     description: "Realtime quiz apps for educational and corporate training purposes.",
     href: "/project/empatrima",
-    imageSrc: "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/soon.png",
+    imageSrc: "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/empatrima.png",
     imageAlt: "Empatrima",
   },
   {
