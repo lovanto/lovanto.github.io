@@ -27,6 +27,7 @@ const listOfId = [
   { id: "96d924772c558dc23069", name: "wabi-integration" },
   { id: "f0d9618ff8a942f86e46", name: "adenco-enterprise-system" },
   { id: "44af271b48446580149c", name: "wcc-system" },
+  { id: "715c721f45d21a9ec2bf", name: "moeda" },
 ];
 
 function getId(param) {
