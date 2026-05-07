@@ -9,10 +9,25 @@ function ComingSoon() {
     <div className={`h-screen flex items-center justify-center ${isDarkMode}`}>
       <div className="isolate px-6 lg:px-8">
         <div className="text-center">
-          <Avatar className="h-8 w-auto mb-6" src={logo} alt="" />
-          <h1 className="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">Coming Soon</h1>
-          <p className="mt-6 text-base leading-7 text-gray-600">Sorry, we will back soon.</p>
-          <div className="mt-10 flex items-center justify-center gap-x-6">
+          <div className="animate-fade-slide-up" style={{ animationDelay: "0ms" }}>
+            <Avatar className="h-8 w-auto mb-6" src={logo} alt="" />
+          </div>
+          <h1
+            className="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl animate-fade-slide-up"
+            style={{ animationDelay: "100ms" }}
+          >
+            Coming Soon
+          </h1>
+          <p
+            className="mt-6 text-base leading-7 text-gray-600 animate-fade-slide-up"
+            style={{ animationDelay: "200ms" }}
+          >
+            Sorry, we will back soon.
+          </p>
+          <div
+            className="mt-10 flex items-center justify-center gap-x-6 animate-fade-slide-up"
+            style={{ animationDelay: "300ms" }}
+          >
             <a
               href="/"
               className="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm 

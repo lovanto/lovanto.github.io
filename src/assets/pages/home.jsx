@@ -9,15 +9,24 @@ function Home() {
       <div className="isolate px-6 lg:px-8">
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+            <h1
+              className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl animate-fade-slide-up"
+              style={{ animationDelay: "0ms" }}
+            >
               Hi, I'm <span className="text-blue-600">Lovanto</span>
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p
+              className="mt-6 text-lg leading-8 text-gray-600 animate-fade-slide-up"
+              style={{ animationDelay: "150ms" }}
+            >
               I am a passionate Software Development, Devops Engineer, AI and Cyber Security Enthusiast, currently
               working as Software Engineer at Altimeda Cipta Visitama and Founder at Hompimpa. Main Tech Stack: Golang,
               Node.js, NestJS, and Next.js.
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
+            <div
+              className="mt-10 flex items-center justify-center gap-x-6 animate-fade-slide-up"
+              style={{ animationDelay: "300ms" }}
+            >
               <a
                 href={resume}
                 target="_blank"

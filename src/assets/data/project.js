@@ -7,12 +7,25 @@ const products = [
     imageAlt: "AIMOS",
   },
   {
-    name: "Moeda Pos Apps",
-    description:
-      "Modern POS system for handling transactions, inventory tracking, sales reporting, and daily business operations efficiently.",
-    href: "/project/moeda",
+    name: "Wedding Apps",
+    description: "Modern wedding management application for planning, guest coordination, and event scheduling.",
+    href: "/project/wedding",
     imageSrc: "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/soon.png",
-    imageAlt: "Moeda",
+    imageAlt: "Wedding Apps",
+  },
+  {
+    name: "Kanban Board",
+    description: "Visual project management tool for tracking tasks and workflows using the Kanban methodology.",
+    href: "/project/kanban",
+    imageSrc: "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/soon.png",
+    imageAlt: "Empatrima",
+  },
+  {
+    name: "Hompimpa",
+    description: "Modern company profile website for Hompimpa, showcasing services, portfolio, and brand identity.",
+    href: "/project/hompimpa",
+    imageSrc: "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/soon.png",
+    imageAlt: "Hompimpa",
   },
   {
     name: "Empatrima",
@@ -20,6 +33,14 @@ const products = [
     href: "/project/empatrima",
     imageSrc: "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/soon.png",
     imageAlt: "Empatrima",
+  },
+  {
+    name: "Moeda Pos Apps",
+    description:
+      "Modern POS system for handling transactions, inventory tracking, sales reporting, and daily business operations efficiently.",
+    href: "/project/moeda",
+    imageSrc: "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/soon.png",
+    imageAlt: "Moeda",
   },
   {
     name: "WCC - Enterprise System",

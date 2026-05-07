@@ -1,4 +1,5 @@
 import { useOutletContext } from "react-router-dom";
+import ScrollReveal from "../components/scroll_reveal";
 
 import github from "../images/github.svg";
 import linkedin from "../images/linkedin.svg";
@@ -32,19 +33,19 @@ function About() {
     <div className={`flex items-center justify-center -mt-24 min-h-screen ${isDarkMode}`}>
       <div className="isolate px-6 lg:px-8">
         <div className="mx-auto max-w-2xl py-32 sm:py-48 md:py-32 lg:py-56">
-          <div className="px-4 sm:px-0">
+          <ScrollReveal delay={0} className="px-4 sm:px-0">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mt-mobile">
               <span className="text-blue-600">About</span> Me
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-6">
-              <div className="flex justify-center md:justify-start items-center">
+              <ScrollReveal delay={100} className="flex justify-center md:justify-start items-center">
                 <img
-                  className="h-full w-72 ring-0 object-cover"
+                  className="h-full w-72 ring-0 object-cover rounded-2xl"
                   src="https://i.ibb.co.com/QQKrp6s/1728640906974.jpg"
                   alt=""
                 />
-              </div>
-              <div>
+              </ScrollReveal>
+              <ScrollReveal delay={200}>
                 <p className="text-sm leading-6 text-gray-900">
                   I am a passionate Software Engineer, DevOps Engineer, AI, and Cyber Security enthusiast currently
                   working at PT. Altimeda Cipta Visitama and Founder of Hompimpa. I specialize in building scalable
@@ -65,52 +66,70 @@ function About() {
                     name="whatsapp"
                   />
                 </div>
-              </div>
+              </ScrollReveal>
             </div>
-          </div>
+          </ScrollReveal>
 
-          <hr className="h-px my-8 bg-gray-500 border-0"></hr>
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Work <span className="text-blue-600">Experiences</span>
-          </h2>
+          <ScrollReveal delay={0}>
+            <hr className="h-px my-8 bg-gray-500 border-0"></hr>
+          </ScrollReveal>
+          <ScrollReveal delay={0}>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Work <span className="text-blue-600">Experiences</span>
+            </h2>
+          </ScrollReveal>
           <ul
             aria-label="User feed"
             role="feed"
             className="relative flex flex-col gap-12 py-12 pl-8 after:border-dashed 
-            after:absolute after:top-6 after:bottom-6 after:border after:border-gray-500"
+            after:absolute after:top-6 after:bottom-6 after:border after:border-gray-500 after:-z-10"
           >
-            {Object.entries(groupedExperienceData).map(([company, experiences]) => (
-              <FeedExperience data={experiences} key={company} />
+            {Object.entries(groupedExperienceData).map(([company, experiences], index) => (
+              <ScrollReveal key={company} delay={index * 80}>
+                <FeedExperience data={experiences} />
+              </ScrollReveal>
             ))}
           </ul>
 
-          <hr className="h-px my-8 bg-gray-500 border-0"></hr>
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            <span className="text-blue-600">Educational</span> Level
-          </h2>
+          <ScrollReveal delay={0}>
+            <hr className="h-px my-8 bg-gray-500 border-0"></hr>
+          </ScrollReveal>
+          <ScrollReveal delay={0}>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              <span className="text-blue-600">Educational</span> Level
+            </h2>
+          </ScrollReveal>
           <ul
             aria-label="User feed"
             role="feed"
             className="relative flex flex-col gap-12 py-12 pl-8 after:border-dashed 
-            after:absolute after:top-6 after:bottom-6 after:border after:border-gray-500"
+            after:absolute after:top-6 after:bottom-6 after:border after:border-gray-500 after:-z-10"
           >
             {educationData.map((item, index) => (
-              <FeedExperienceNoImage data={item} key={item.company + index} />
+              <ScrollReveal key={item.company + index} delay={index * 80}>
+                <FeedExperienceNoImage data={item} />
+              </ScrollReveal>
             ))}
           </ul>
 
-          <hr className="h-px my-8 bg-gray-500 border-0"></hr>
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Organizational <span className="text-blue-600">Experiences</span>
-          </h2>
+          <ScrollReveal delay={0}>
+            <hr className="h-px my-8 bg-gray-500 border-0"></hr>
+          </ScrollReveal>
+          <ScrollReveal delay={0}>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Organizational <span className="text-blue-600">Experiences</span>
+            </h2>
+          </ScrollReveal>
           <ul
             aria-label="User feed"
             role="feed"
             className="relative flex flex-col gap-12 py-12 pl-8 after:border-dashed 
-            after:absolute after:top-6 after:bottom-6 after:border after:border-gray-500"
+            after:absolute after:top-6 after:bottom-6 after:border after:border-gray-500 after:-z-10"
           >
             {organizationalData.map((item, index) => (
-              <FeedExperienceNoImage data={item} key={item.company + index} />
+              <ScrollReveal key={item.company + index} delay={index * 80}>
+                <FeedExperienceNoImage data={item} />
+              </ScrollReveal>
             ))}
           </ul>
         </div>

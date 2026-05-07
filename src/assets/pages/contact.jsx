@@ -50,11 +50,11 @@ function Contact() {
   return (
     <div className={`h-screen flex items-center justify-center isolate px-6 py-24 sm:py-32 lg:px-8 ${isDarkMode}`}>
       <form onSubmit={handleSubmit} className="mx-auto mt-2 max-w-xl">
-        <div className="mx-auto max-w-2xl text-center">
+        <div className="mx-auto max-w-2xl text-center animate-fade-slide-up" style={{ animationDelay: "0ms" }}>
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact</h2>
         </div>
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2 mt-16">
-          <div>
+          <div className="animate-fade-slide-up" style={{ animationDelay: "100ms" }}>
             <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
               First name
             </label>
@@ -71,7 +71,7 @@ function Contact() {
               />
             </div>
           </div>
-          <div>
+          <div className="animate-fade-slide-up" style={{ animationDelay: "150ms" }}>
             <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">
               Last name
             </label>
@@ -88,7 +88,7 @@ function Contact() {
               />
             </div>
           </div>
-          <div className="sm:col-span-2">
+          <div className="sm:col-span-2 animate-fade-slide-up" style={{ animationDelay: "200ms" }}>
             <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900">
               Email
             </label>
@@ -105,7 +105,7 @@ function Contact() {
               />
             </div>
           </div>
-          <div className="sm:col-span-2">
+          <div className="sm:col-span-2 animate-fade-slide-up" style={{ animationDelay: "280ms" }}>
             <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
               Message
             </label>
@@ -123,7 +123,7 @@ function Contact() {
             </div>
           </div>
         </div>
-        <div className="mt-10">
+        <div className="mt-10 animate-fade-slide-up" style={{ animationDelay: "360ms" }}>
           {submitStatus === "success" && (
             <div className="mb-4 p-4 rounded-md bg-green-50 border border-green-200">
               <p className="text-green-800 text-sm">Message sent successfully! I'll get back to you soon.</p>
