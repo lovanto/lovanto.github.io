@@ -30,7 +30,7 @@ function CarouselDefault({ media }) {
 
   return (
     <div className="relative rounded-lg md:ms-16 sm:ms-0 mb-4 shadow-md w-carousel">
-      <div className="relative h-96 overflow-hidden rounded-lg">
+      <div className="relative h-[32rem] overflow-hidden rounded-lg">
         <img
           src={media[currentIndex]}
           alt={`Slide ${currentIndex}`}
