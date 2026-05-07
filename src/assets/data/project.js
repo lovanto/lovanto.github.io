@@ -24,7 +24,7 @@ const products = [
     name: "Hompimpa",
     description: "Modern company profile website for Hompimpa, showcasing services, portfolio, and brand identity.",
     href: "/project/hompimpa",
-    imageSrc: "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/soon.png",
+    imageSrc: "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/hompimpa.png",
     imageAlt: "Hompimpa",
   },
   {

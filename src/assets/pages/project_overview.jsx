@@ -29,6 +29,7 @@ const listOfId = [
   { id: "44af271b48446580149c", name: "wcc-system" },
   { id: "715c721f45d21a9ec2bf", name: "moeda" },
   { id: "e026977d88d0f73b8d59", name: "empatrima" },
+  { id: "a6688a7902cbd99980fc", name: "hompimpa" },
 ];
 
 function getId(param) {
