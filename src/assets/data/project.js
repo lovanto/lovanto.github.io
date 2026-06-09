@@ -29,11 +29,11 @@ const products = [
     imageAlt: "Wedding Apps",
   },
   {
-    name: "Kanban Board",
+    name: "PapanClip",
     description: "Visual project management tool for tracking tasks and workflows using the Kanban methodology.",
-    href: "/project/kanban",
+    href: "/project/papanclip",
     imageSrc: "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/soon.png",
-    imageAlt: "Empatrima",
+    imageAlt: "PapanClip",
   },
   {
     name: "Hompimpa",

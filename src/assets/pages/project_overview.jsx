@@ -30,6 +30,7 @@ const listOfId = [
   { id: "715c721f45d21a9ec2bf", name: "moeda" },
   { id: "560dcdf42ff03fab17d2", name: "empatrima" },
   { id: "a6688a7902cbd99980fc", name: "hompimpa" },
+  { id: "433161d96ba5822ea095", name: "papanclip" },
 ];
 
 function getId(param) {
