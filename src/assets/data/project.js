@@ -1,5 +1,20 @@
 const products = [
   {
+    name: "Papaya",
+    description: "Skill-based AI assistant web app with multi-provider orchestration powered by Hermes Agent.",
+    href: "/project/papaya",
+    imageSrc: "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/soon.png",
+    imageAlt: "Papaya",
+  },
+  {
+    name: "Daedalus",
+    description:
+      "A web application implementing the Agent Development Lifecycle (ADLC) framework — for defining, building, evaluating, and governing AI agents.",
+    href: "/project/daedalus",
+    imageSrc: "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/soon.png",
+    imageAlt: "Daedalus",
+  },
+  {
     name: "AI Marketing Operating System(AIMOS)",
     description: "AI-powered marketing operating system built specifically for large enterprises.",
     href: "/project/aimos",
