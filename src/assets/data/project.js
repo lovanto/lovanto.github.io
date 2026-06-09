@@ -32,7 +32,7 @@ const products = [
     name: "PapanClip",
     description: "Visual project management tool for tracking tasks and workflows using the Kanban methodology.",
     href: "/project/papanclip",
-    imageSrc: "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/soon.png",
+    imageSrc: "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/papanclip.png",
     imageAlt: "PapanClip",
   },
   {
