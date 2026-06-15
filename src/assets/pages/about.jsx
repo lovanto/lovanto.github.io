@@ -47,14 +47,14 @@ function About() {
               </ScrollReveal>
               <ScrollReveal delay={200}>
                 <p className="text-sm leading-6 text-gray-900">
-                  I am a passionate Software Engineer, DevOps Engineer, AI, and Cyber Security enthusiast currently
-                  working at PT. Altimeda Cipta Visitama and Founder of Hompimpa. I specialize in building scalable
-                  backend systems, RESTful APIs, and cloud-based applications using Golang, Node.js, NestJS, and
-                  Next.js.
+                  I am a backend-focused Software Engineer with 4+ years of professional experience, currently working
+                  at PT. Altimeda Cipta Visitama and Founder of Hompimpa. I specialize in building scalable backend
+                  systems, RESTful APIs, microservices, and AI-powered platforms using Golang, Node.js, NestJS, and
+                  Next.js, delivering production systems for enterprise clients across Indonesia, Australia, and Japan.
                   <br />
-                  <br />I also have experience in DevOps practices such as CI/CD, Docker, server management, and cloud
-                  deployment, along with developing AI-powered solutions integrated with OpenAI technologies and vector
-                  search systems.
+                  <br />I also have hands-on experience with cloud infrastructure (Azure, GCP, AWS), CI/CD pipelines, and
+                  DevOps practices such as Docker and Linux server administration, along with AI integrations using
+                  OpenAI, Claude, and Gemini APIs and vector search systems.
                 </p>
                 <div className="flex justify-start items-center gap-4 mt-6">
                   <SosMedIcon link="https://www.linkedin.com/in/lovanto" source={linkedin} name="linkedin" />

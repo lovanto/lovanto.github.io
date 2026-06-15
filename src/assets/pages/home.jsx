@@ -1,7 +1,7 @@
 import { useOutletContext } from "react-router-dom";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 
-import resume from "../Rifky Lovanto-resume.pdf";
+const resume = "https://1drv.ms/b/c/5aeb4bae723d9d9b/IQB7HJ7K1fUGRZo3Ks0KQqXlAfKvGULNf88UCjZlQ2-b5hE?e=1c0MW8";
 function Home() {
   const [isDarkMode, background] = useOutletContext();
   return (
@@ -19,9 +19,9 @@ function Home() {
               className="mt-6 text-lg leading-8 text-gray-600 animate-fade-slide-up"
               style={{ animationDelay: "150ms" }}
             >
-              I am a passionate Software Development, Devops Engineer, AI and Cyber Security Enthusiast, currently
-              working as Software Engineer at Altimeda Cipta Visitama and Founder at Hompimpa. Main Tech Stack: Golang,
-              Node.js, NestJS, and Next.js.
+              I'm a backend-focused Software Engineer with 4+ years of experience building scalable APIs,
+              microservices, and AI-powered platforms, currently working as Backend Developer at Altimeda Cipta
+              Visitama and Founder at Hompimpa. Main Tech Stack: Golang, Node.js, NestJS, and Next.js.
             </p>
             <div
               className="mt-10 flex items-center justify-center gap-x-6 animate-fade-slide-up"

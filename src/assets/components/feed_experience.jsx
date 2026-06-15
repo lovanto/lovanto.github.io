@@ -1,3 +1,16 @@
+// Render text with **highlighted** segments emphasized in blue
+function renderHighlighted(text) {
+  return text.split(/(\*\*[^*]+\*\*)/g).map((part, i) =>
+    part.startsWith("**") && part.endsWith("**") ? (
+      <span key={i} className="font-semibold text-blue-600">
+        {part.slice(2, -2)}
+      </span>
+    ) : (
+      part
+    )
+  );
+}
+
 function FeedExperience({ data }) {
   return (
     <li role="article" className="relative pl-8">
@@ -24,9 +37,17 @@ function FeedExperience({ data }) {
               </div>
 
               {/* Description */}
-              <p className="text-gray-900 text-sm">
-                <span>{experience.description}</span>
-              </p>
+              {Array.isArray(experience.description) ? (
+                <ul className="mt-1.5 list-disc list-outside pl-5 text-gray-900 text-sm space-y-1.5 marker:text-blue-600">
+                  {experience.description.map((point, i) => (
+                    <li key={i} className="leading-relaxed">
+                      {renderHighlighted(point)}
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="text-gray-900 text-sm">{renderHighlighted(experience.description)}</p>
+              )}
             </div>
           ))}
         </div>

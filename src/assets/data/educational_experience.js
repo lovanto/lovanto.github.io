@@ -3,7 +3,7 @@ const workExperienceData = [
     company: "Telkom University",
     date: "Sep 2019 - Nov 2023",
     status: "Software Engineering",
-    description: "Graduate with cum laude predicate",
+    description: "Graduated Cum Laude with a GPA of 3.78/4.00",
   },
   {
     company: "Medikacom Vocational High School",
