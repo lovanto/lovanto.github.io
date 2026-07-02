@@ -1,10 +1,26 @@
 const products = [
   {
-    name: "Papaya",
-    description: "Skill-based AI assistant web app with multi-provider orchestration powered by Hermes Agent.",
-    href: "/project/papaya",
+    name: "LowkeyThings",
+    description: "Event Marketplace helps users discover, compare, and explore events in one place.",
+    href: "/project/lowkeythings",
     imageSrc: "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/soon.png",
-    imageAlt: "Papaya",
+    imageAlt: "LowkeyThings",
+  },
+  {
+    name: "CheckClip",
+    description:
+      "Empower your enterprise with seamless tax calculators, real-time-clock logs, local BPJS sync, and active KPI targets.",
+    href: "/project/checkclip",
+    imageSrc: "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/soon.png",
+    imageAlt: "CheckClip",
+  },
+  {
+    name: "Atlas",
+    description:
+      "AI-first enterprise platforms for industrial operators, enabling predictive maintenance and operational efficiency.",
+    href: "/project/atlas",
+    imageSrc: "https://raw.githubusercontent.com/lovanto/lovanto.github.io/master/src/assets/project/soon.png",
+    imageAlt: "Atlas",
   },
   {
     name: "Daedalus",

@@ -12,6 +12,8 @@ import FeedExperienceNoImage from "../components/feed_experience_no_image";
 import experienceData from "../data/work_experience";
 import educationData from "../data/educational_experience";
 import organizationalData from "../data/organizational_experience";
+import skillsData from "../data/skills";
+import achievementsData from "../data/achievements";
 
 // Group experiences by company
 function groupByCompany(data) {
@@ -47,21 +49,17 @@ function About() {
               </ScrollReveal>
               <ScrollReveal delay={200}>
                 <p className="text-sm leading-6 text-gray-900">
-                  I am a backend-focused Software Engineer with 4+ years of professional experience, currently working
-                  at PT. Altimeda Cipta Visitama and Founder of Hompimpa. I specialize in building scalable backend
-                  systems, RESTful APIs, microservices, and AI-powered platforms using Golang, Node.js, NestJS, and
-                  Next.js, delivering production systems for enterprise clients across Indonesia, Australia, and Japan.
-                  <br />
-                  <br />I also have hands-on experience with cloud infrastructure (Azure, GCP, AWS), CI/CD pipelines, and
-                  DevOps practices such as Docker and Linux server administration, along with AI integrations using
-                  OpenAI, Claude, and Gemini APIs and vector search systems.
+                  Backend-focused software engineer with experience building scalable APIs, microservices, and
+                  AI-powered platforms using Node.js, Golang, and NestJS. Delivered production systems across
+                  Indonesia, Australia, Singapore, and Japan, with cloud platforms (Azure, GCP, AWS), Linux Server,
+                  CI/CD, and AI integrations (OpenAI, Claude, Gemini, Local LLM).
                 </p>
                 <div className="flex justify-start items-center gap-4 mt-6">
                   <SosMedIcon link="https://www.linkedin.com/in/lovanto" source={linkedin} name="linkedin" />
                   <SosMedIcon link="https://github.com/lovanto" source={github} name="github" />
                   <SosMedIcon link="mailto:rifkylovanto@gmail.com" source={gmail} name="gmail" />
                   <SosMedIcon
-                    link="https://api.whatsapp.com/send?phone=6287823837566"
+                    link="https://api.whatsapp.com/send?phone=6282123304428"
                     source={whatsapp}
                     name="whatsapp"
                   />
@@ -132,6 +130,53 @@ function About() {
               </ScrollReveal>
             ))}
           </ul>
+
+          <ScrollReveal delay={0}>
+            <hr className="h-px my-8 bg-gray-500 border-0"></hr>
+          </ScrollReveal>
+          <ScrollReveal delay={0}>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Technologies & <span className="text-blue-600">Skills</span>
+            </h2>
+          </ScrollReveal>
+          <div className="py-8 space-y-6">
+            {skillsData.map((skill, index) => (
+              <ScrollReveal key={skill.category} delay={index * 80}>
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900">{skill.category}</h3>
+                  <div className="flex flex-wrap gap-2 mt-2">
+                    {skill.items.map((item) => (
+                      <span
+                        key={item}
+                        className="inline-flex items-center rounded-md bg-blue-50 px-2.5 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10"
+                      >
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+
+          <ScrollReveal delay={0}>
+            <hr className="h-px my-8 bg-gray-500 border-0"></hr>
+          </ScrollReveal>
+          <ScrollReveal delay={0}>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              <span className="text-blue-600">Achieve</span>ments
+            </h2>
+          </ScrollReveal>
+          <div className="py-8 space-y-4">
+            {achievementsData.map((achievement, index) => (
+              <ScrollReveal key={achievement.title} delay={index * 80}>
+                <div className="border-l-4 border-blue-600 pl-4">
+                  <h3 className="text-lg font-semibold text-gray-900">{achievement.title}</h3>
+                  <p className="text-sm text-gray-600 mt-1">{achievement.description}</p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
         </div>
         {background}
       </div>
